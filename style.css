@@ -214,3 +214,40 @@ font-family: var(--ff-family-primary);
 .check-list li::before{
  content: url('assets/check-mark.svg');
 }
+.photo-grid{
+  display: grid;
+  gap: 1rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(9,100px);
+  grid-auto-rows: minmax(250px,auto);
+  grid-template-areas: 
+  'i1 i1 i1 i2 i2 i2 i2 i2 i2'
+  'i3 i3 i3 i3 i3 i3 i4 i4 i4';
+  /* place-items: center; */
+  
+}
+.portfolio-card:nth-of-type(1){
+  background-image: url('assets/sofa.svg');
+  background-repeat: no-repeat;
+  grid-area: i1;
+  /* background-size: cover; */
+
+}
+.portfolio-card:nth-of-type(2){
+  background-image: url('assets/key-board.svg');
+  background-repeat: no-repeat;
+  grid-area: i2;
+  /* background-size: cover; */
+}
+.portfolio-card:nth-of-type(3){
+  background-image: url('assets/work-media.svg');
+  background-repeat: no-repeat;
+  grid-area: i3;
+  /* background-size: cover; */
+}
+.portfolio-card:nth-of-type(4){
+  background-image: url('assets/dddone.svg');
+  background-repeat: no-repeat;
+  grid-area: i4;
+  /* background-size: cover; */
+} 
