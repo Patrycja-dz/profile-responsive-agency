@@ -1,7 +1,50 @@
 :root{
+--clr-primary-900:rgb(40,41,62,1);
+--clr-primary-100:rgb(253, 240, 233,1);
+
+--clr-neutral-100:rgb(255,255,255,1);
+--clr-neutral-500:rgb(57,20,0,1);
+--clr-neutral-400:rgb(57,20,0,0.64);
+
+--accent-clr-500:rgb(239,109,88,1);
+--accent-clrr-450:rgb(239,109,87,1);
+--accent-clr-300: rgb(255,255,255,0.64);
+--accent-clr-400: rgb(255,255,255,0.3);
+--accent-clr-100: rgb(243,209,191,1);
+
+--ff-family-primary:'Epilogue', sans-serif;
+--ff-body: var(--ff-family-primary);
+--ff-heading:var(--ff-family-primary);
+--fw-regular:400;
+--fw-semi-bold:700;
+--fw-bold:800;
+--fw-super-bold:900;
+
+--fs-200:.75rem;
+--fs-250:.875rem;
+--fs-350:1rem;  /*16px*/
+--fs-400:1.25rem;
+--fs-500:1.5rem;
+--fs-600:2.5rem;
+--fs-800:3.5rem;
+--fs-900:4.5rem;
+
+--fs-primary-heading: var(--fs-800);
+--fs-secondary-heading:var(--fs-700);
+--fs-nav: var(--fs-350);
+--fs-body: var(--fs-350);
+--fs-button:var(--fs-200);
+
 
 }
 
+@media(min-width:50em){
+  :root{
+    --fs-primary-heading:var(--fs-900);
+    --fs-secondary-heading:var(--fs-800);
+  }
+}
+ /* https://piccalil.li/blog/a-modern-css-reset */
 
 /* Box sizing rules */
 *,
@@ -65,4 +108,72 @@ svg {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+/* utilities */
+.text-primary-400 {
+  color: var(--clr-neutral-500);
+}
+.text-primary-300{
+  color: var(--accent-clr-300)
+}
+
+.text-accent-300 {
+  color: var(--accent-clr-500);
+}
+.text-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+.text-neutral-900 {
+  color: var(--clr-neutral-400);
+}
+
+.bg-primary-500 {
+  background-color: var(--clr-primary-900);
+}
+.bg-primary-900 {
+  background-color: var(--clr-primary-100);
+}
+.bg-accent-500 {
+  background-color: var(--accent-clr-500);
+}
+.bg-accent-150 {
+  background-color: var(--accent-clrr-450);
+}
+.bg-neutral-200 {
+  background-color: var(--accent-clr-100);
+}
+
+.fw-super-bold{ 
+  font-weight: (var(--fw-super-bold))}
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+  line-height: 1.1;
+}
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+  line-height: 1.1;
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-600 {
+  font-size: var(--fs-600);
 }
