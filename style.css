@@ -7,7 +7,7 @@
 --clr-neutral-400:rgb(57,20,0,0.64);
 
 --accent-clr-500:rgb(239,109,88,1);
---accent-clrr-450:rgb(239,109,87,1);
+--accent-clr-450:rgb(239,109,87,1);
 --accent-clr-300: rgb(255,255,255,0.64);
 --accent-clr-400: rgb(255,255,255,0.3);
 --accent-clr-100: rgb(243,209,191,1);
@@ -83,6 +83,7 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
@@ -113,12 +114,18 @@ svg {
 .text-primary-400 {
   color: var(--clr-neutral-500);
 }
+.text-color-350{
+  color:var(--clr-neutral-400)
+}
 .text-primary-300{
   color: var(--accent-clr-300)
 }
 
-.text-accent-300 {
+.text-accent-500 {
   color: var(--accent-clr-500);
+}
+.text-accent-450{
+  color: var(--accent-clr-450);
 }
 .text-neutral-100 {
   color: var(--clr-neutral-100);
@@ -127,17 +134,20 @@ svg {
   color: var(--clr-neutral-400);
 }
 
-.bg-primary-500 {
+.bg-primary-900 {
   background-color: var(--clr-primary-900);
 }
-.bg-primary-900 {
+.bg-neutral-100{
+  background-color: var(--clr-neutral-100);
+}
+.bg-primary-100 {
   background-color: var(--clr-primary-100);
 }
 .bg-accent-500 {
   background-color: var(--accent-clr-500);
 }
 .bg-accent-150 {
-  background-color: var(--accent-clrr-450);
+  background-color: var(--accent-clr-450);
 }
 .bg-neutral-200 {
   background-color: var(--accent-clr-100);
@@ -165,15 +175,42 @@ svg {
   line-height: 1.1;
 }
 
-.fs-300 {
-  font-size: var(--fs-300);
+.fs-button {
+  font-size: var(--fs-button);
+}
+.fs-200{
+  font-size: var(--fs-200);
+}
+.fs-250 {
+  font-size: var(--fs-250);
+}
+.fs-350 {
+  font-size: var(--fs-body);
 }
 .fs-400 {
   font-size: var(--fs-400);
 }
-.fs-500 {
+.fs-500{
   font-size: var(--fs-500);
 }
-.fs-600 {
+.fs-600{
   font-size: var(--fs-600);
+}
+
+
+body{
+font-size: var(--fs-body);
+font-family: var(--ff-family-primary);
+
+
+}
+.btn-neutral{
+  background-color: transparent;
+  border: 1px solid var(--accent-clr-400);
+}
+.uppercased{
+  text-transform: uppercase;
+}
+.check-list li::before{
+ content: url('assets/check-mark.svg');
 }
