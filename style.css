@@ -2,7 +2,6 @@
   --clr-primary-900: rgb(40, 41, 62, 1);
   --clr-primary-100: rgb(253, 240, 233, 1);
 
-
   --clr-neutral-100: rgb(255, 255, 255, 1);
   --clr-neutral-500: rgb(57, 20, 0, 1);
   --clr-neutral-400: rgb(57, 20, 0, 0.64);
@@ -272,6 +271,8 @@ svg {
 .container-flex {
   display: flex;
   gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 body {
@@ -280,7 +281,7 @@ body {
 }
 
 /* unikamy stylizacji po nazwach ktore sa znacznikami */
-.button {
+.btn {
   border: none;
   border-radius: 6px;
   padding: 1.125em 2em;
@@ -330,7 +331,19 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.flow{
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.border{
+  border:1px solid red
+}
+.text{
+  width: clamp(45ch, 50%, 75ch);
+}
 .divider {
   height: 1px;
   width: 100%;

@@ -21,32 +21,32 @@
         </a>
         <nav class="primary-navigation">
           <ul role="list" class="nav-list">
-            <li class="nav-list-item text-neutral-100">
-              <a href="#">About</a>
+            <li class="nav-list-item ">
+              <a href="#" class="text-neutral-100">About</a>
             </li>
             <li class="nav-list-item text-neutral-100">
-              <a href="#">Services</a>
+              <a href="#" class="text-neutral-100">Services</a>
             </li>
             <li class="nav-list-item text-neutral-100">
-              <a href="#">Pricing</a>
+              <a href="#" class="text-neutral-100">Pricing</a>
             </li>
             <li class="nav-list-item text-neutral-100">
-              <a href="#">Blog</a>
+              <a href="#" class="text-neutral-100">Blog</a>
             </li>
           </ul>
         </nav>
-        <button class="button uppercased text-neutral-100 decoration-neutral fw-super-bold fs-button">
+        <button class="btn uppercased text-neutral-100 decoration-neutral fw-super-bold fs-button">
           Contact
         </button>
       </div>
     </div>
   </header>
   <main>
+
     <section class="bg-primary-900 padding-block-900">
       <div class="container container-flex">
-       
           <div class="flow">
-            <h5 class="text-accent-500 uppercased padding-block-400">Modern Studio</h5>
+            <h5 class="text-accent-500 uppercased padding-block-400 fw-regular">Modern Studio</h5>
             <h1 class="fs-primary-heading fw-bold text-neutral-100">
               We’re Help To Build Your Dream Project
             </h1>
@@ -54,11 +54,10 @@
               Agency provides a full service range including technical skills,
               design, business understanding.
             </p>
-            <button class="button uppercased bg-accent-500 text-neutral-100 fw-super-bold fs-button padding-block-900">
-              How we work
-            </button>
-            <span class="fw-regular text-neutral-100 padding-inline-700">Contact us</span>
-
+            <div class="container-flex">        
+              <button class="btn uppercased bg-accent-500 text-neutral-100 fw-super-bold fs-button padding-block-900">How we work</button>
+              <span class="fw-regular text-neutral-100 padding-inline-700">Contact us</span>
+            </div>
             <div class="hero-quote-idea">
               <img src="assets/hero-little-purple-circle.svg" alt="" />
               <div class="padding-inline-400  hero-quote">
@@ -69,33 +68,35 @@
               </div>
             </div>
           </div>
-
           <img src="assets/hero-image.svg" alt="hero image"/>
-        
       </div>
     </section>
-    <section class="clr-primary-100 padding-block-900">
-      <div class="container">
+    
+      <div class="container padding-block-700">
         <img class='padding-block-400' src="assets/brands.svg" />
         <div class="divider"></div>
-        <div class="even-columns padding-block-900">
-          <div>
-            <img src="assets/design-agency-image.svg" alt="design agency image" />
-          </div>
-          <h5 class="text-accent-500 uppercased fw-regular">About</h5>
-          <h2 class="fs-secondary-heading text-primary-400 fw-bold">
-            An Experience Design Agency
-          </h2>
-          <p class="fs-400 fw-regular">Provides a full service range</p>
-          <p class="fw-regular">
+      </div>
+
+      <section class="clr-primary-100 padding-block-400">
+      <div class="container container-flex">
+        <img src="assets/design-agency-image.svg" alt="design agency image" />
+          <div class="flow padding-inline-900">
+            <h5 class="text-accent-500 uppercased fw-regular padding-block-500">About</h5>
+            <h2 class="fs-secondary-heading text-primary-400 fw-bold">An Experience Design Agency</h2>
+            <p class="fs-400 fw-regular padding-block-400">Provides a full service range</p>
+            <p class="fw-regular padding-block-400 text-color-350 text">
             Ability to put themselves in the merchant's shoes. It is meant to
             partner on the long run, and work as an extension of the
             merchant's team.
-          </p>
-          <button class="button uppercased fw-super-bold fs-button">
-            About Us
-          </button>
+            </p>
+            <div class="padding-block-500">
+              <button class="btn uppercased fw-super-bold fs-button 0">About Us</button>
+            </div>
+           </div>
         </div>
+      </section>
+
+      <section class="clr-primary-100">
         <div class="odd-columns">
           <div>
             <h3 class="fs-600 fw-bold">42%</h3>
@@ -110,6 +111,8 @@
             <p class="fs-400 fw-regular">Projects complete</p>
           </div>
         </div>
+        </section>
+        <section>
         <div class="even-columns">
           <h5 class="text-accent-500 uppercased fw-regular">how we work</h5>
           <h3 class="fs-600 text-primary-400 fw-bold">
@@ -140,6 +143,8 @@
             </ul>
           </div>
         </div>
+      </section>
+      <section>
         <div class="even-columns">
           <img src="assets/video.svg" alt="video image" />
           <div>
@@ -171,6 +176,7 @@
           </div>
           <img src="assets/site-new-look.svg" alt="" srcset="" />
         </div>
+      </section>
         <div class="odd-columns">
           <div>
             <h5 class="text-accent-500">Features</h5>
@@ -212,7 +218,7 @@
                 shoes. It is meant to partner."</span>
               <p class="text-primary-400">Jenny Murtaugh</p>
             </div>
-            <button class="button bg-neutral-100 text-primary-400">
+            <button class="btn bg-neutral-100 text-primary-400">
               Explore
             </button>
           </div>
@@ -285,7 +291,7 @@
           </p>
           <h3>DDDone</h3>
         </div>
-        <button class="button decoration-neutral text-neutral-100 fs-button fw-super-bold">
+        <button class="btn decoration-neutral text-neutral-100 fs-button fw-super-bold">
           Explore More
         </button>
         <!-- here will be consultant banner -->
