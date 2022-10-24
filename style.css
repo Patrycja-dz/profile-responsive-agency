@@ -402,15 +402,21 @@ body {
   border-radius: 50%;
   border: 1px solid var(--accent-clr-250);
   background-color: transparent;
-  top: 0;
-  left: 0;
-  z-index: var(--max-index);
+  top: 50%;
+  left: 50%;
+  z-index: var(--small-index);
   transform: translate(-50%,-50%);
 }
-.video-img ::before{
- content: ''
-}
+.video-player{
+  width: 32px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  filter: invert(1) sepia(1%)  brightness(1) ;
 
+}
 .check-list li::before {
   content: url("assets/check-mark.svg");
 }
