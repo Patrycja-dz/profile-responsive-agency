@@ -2,7 +2,6 @@
   --clr-primary-900: rgb(40, 41, 62, 1);
   --clr-primary-100: rgb(253, 240, 233, 1);
 
-
   --clr-neutral-100: rgb(255, 255, 255, 1);
   --clr-neutral-500: rgb(57, 20, 0, 1);
   --clr-neutral-400: rgb(57, 20, 0, 0.64);
@@ -11,6 +10,7 @@
   --accent-clr-450: rgb(239, 109, 87, 1);
   --accent-clr-300: rgb(255, 255, 255, 0.64);
   --accent-clr-400: rgb(255, 255, 255, 0.3);
+  --accent-clr-250:rgba(255, 255, 255, 0.503821);
   --accent-clr-100: rgb(243, 209, 191, 1);
   --ff-family-primary: "Epilogue", sans-serif;
   --ff-body: var(--ff-family-primary);
@@ -45,6 +45,11 @@
   --size-700: 3rem;
   --size-800: 4rem;
   --size-900: 5rem;
+
+
+  --max-index: 1000;
+  --average-index:500;
+  --small-index:100
 }
 
 @media (min-width: 50em) {
@@ -272,15 +277,18 @@ svg {
 .container-flex {
   display: flex;
   gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 body {
   font-size: var(--fs-body);
   font-family: var(--ff-family-primary);
+  counter-reset: list;
 }
 
 /* unikamy stylizacji po nazwach ktore sa znacznikami */
-.button {
+.btn {
   border: none;
   border-radius: 6px;
   padding: 1.125em 2em;
@@ -288,7 +296,9 @@ body {
   font-weight: var(--fw-super-bold);
   font-size: var(--fs-button);
 }
-
+.btn-shadow{
+  box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+}
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
@@ -299,10 +309,43 @@ body {
   display: flex;
   gap: clamp(var(--size-500), 5vw, var(--size-900));
 }
-
+.bordered{
+  border:1px solid red
+}
 .even-columns {
   display: grid;
   gap: 1rem;
+}
+.odd-columns{
+ display:flex;
+ justify-content: center;
+}
+.odd-columns>*{
+  flex: 1;
+  border: 1px solid var(--accent-clr-100)
+}
+.odd-columns > :first-child{
+  border-radius:6px 0px 0px 6px;
+}
+.odd-columns> :last-child{
+  border-radius:0px 6px 6px 0px;
+}
+.column{
+ padding: 2.5rem;
+}
+.numbered-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* position: relative;
+  top: var(--size-700); */
+}
+
+.numbered-list h4::before{
+ counter-increment: list;
+ content: ' ' counter(list);
+ font-size: var(--fs-800) ;
+ padding-right: var(--size-600);
 }
 
 @media (min-width: 50em) {
@@ -330,14 +373,50 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.flow{
+  justify-content: flex-end;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.border{
+  border:1px solid red
+}
+.text{
+  width: clamp(45ch, 50%, 75ch);
+}
 .divider {
   height: 1px;
   width: 100%;
   background-color: var(--accent-clr-100);
   margin-top: 2.5rem;
 }
+.video-wrapper{
+  position: relative;
+}
+.play-video-btn{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-clr-250);
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  z-index: var(--small-index);
+  transform: translate(-50%,-50%);
+}
+.video-player{
+  width: 32px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  filter: invert(1) sepia(1%)  brightness(1) ;
 
+}
 .check-list li::before {
   content: url("assets/check-mark.svg");
 }
