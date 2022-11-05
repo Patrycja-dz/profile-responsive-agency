@@ -230,22 +230,22 @@ body {
 }
 
 .portfolio-card {
-    :nth-of-type(1) {
+    &:nth-of-type(1) {
         background-image: url("assets/sofa.svg");
         background-repeat: no-repeat;
     }
 
-    :nth-of-type(2) {
+    &:nth-of-type(2) {
         background-image: url("assets/key-board.svg");
         background-repeat: no-repeat;
     }
 
-    :nth-of-type(3) {
+    &:nth-of-type(3) {
         background-image: url("assets/work-media.svg");
         background-repeat: no-repeat;
     }
 
-    :nth-of-type(4) {
+    &:nth-of-type(4) {
         background-image: url("assets/dddone.svg");
         background-repeat: no-repeat;
     }
