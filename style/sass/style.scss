@@ -1,10 +1,13 @@
 
-@use 'reset.scss';
-@use 'variables.scss';
-@use 'basic-classes.scss';
-@use 'mixins.scss';
+// @use 'reset.scss';
+// @use 'variables.scss';
+// @use 'basic-classes.scss';
+// @use 'mixins.scss';
 
-
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'basic-classes.scss';
+@import 'mixins.scss';
 body {
     font-size: $fs-body;
     font-family: $ff-family-primary;
