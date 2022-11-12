@@ -1,0 +1,126 @@
+@use 'reset.scss';
+@use 'variables.scss';
+@use 'basic-classes.scss';
+@use 'mixins.scss';
+
+body {
+    font-size: $fs-body;
+    font-family: $ff-family-primary;
+}
+
+//utilities 
+
+//container
+.container {
+    $max-width: 1170px;
+    $padding: 1rem;
+    width: (min($max-width), 100% - $padding) * 2;
+    margin-inline: auto;
+}
+
+.container-flex {
+    display: flex;
+    gap: 1rem;
+}
+
+//button
+.primary-btn {
+    @include primary-btn;
+}
+
+//navigation 
+.nav-wrapper {
+    @include basic-flex-settings;
+}
+
+.nav-list {
+    display: flex;
+    gap: clamp(($size-500), 5vw, $size-900);
+}
+
+//hero section 
+
+.hero-quote-idea {
+    display: flex;
+    padding-top: 9.5em;
+}
+
+.hero-quote {
+    @include flex-column
+}
+
+//decorators 
+
+.decoration-neutral {
+    background-color: transparent;
+    border: $border-100 solid $accent-clr-400;
+}
+
+.uppercased {
+    text-transform: uppercase;
+}
+
+.divider {
+    height: $border-100;
+    width: 100%;
+    background-color: $accent-clr-100;
+    margin-top: $fs-600;
+}
+.check-list li::before {
+    content: url("assets/check-mark.svg");
+  }
+//4 image gallery onblue background
+.photo-grid {
+    @include grid-basic-settings;
+}
+
+//do zmienienia 
+
+.portfolio-card:nth-of-type(1) {
+    background-image: url("assets/sofa.svg");
+    background-repeat: no-repeat;
+  
+  }
+  
+  .portfolio-card:nth-of-type(2) {
+    background-image: url("assets/key-board.svg");
+    background-repeat: no-repeat;
+  
+  }
+  
+  .portfolio-card:nth-of-type(3) {
+    background-image: url("assets/work-media.svg");
+  
+  }
+  
+  .portfolio-card:nth-of-type(4) {
+    background-image: url("assets/dddone.svg");
+    background-repeat: no-repeat;
+  
+  }
+  
+  .portfolio-card-title {
+    height: 38px;
+    max-width: 116px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 19px;
+  }
+
+  
+//media queries 
+
+@media (min-width: 50em) {
+    :root {
+        --fs-primary-heading: $fs-900;
+        --fs-secondary-heading: $fs-800;
+    }
+}
+
+@media (min-width: 50em) {
+    .even-columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}

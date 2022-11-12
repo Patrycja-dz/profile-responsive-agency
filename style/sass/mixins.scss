@@ -1,0 +1,26 @@
+@use 'variables.scss';
+@mixin primary-btn {
+    border-radius: $radius;
+    border: $border-none;
+    padding:$button-size;
+    font-weight: $fw-super-bold;
+    font-size: $fs-button;
+    cursor: pointer;
+}
+
+@mixin basic-flex-settings{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin grid-basic-settings{
+    display: grid;
+    gap: 1rem;
+}
