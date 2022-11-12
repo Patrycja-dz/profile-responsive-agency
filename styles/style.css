@@ -32,18 +32,18 @@ body {
 /* //navigation  */
 .nav-wrapper {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
 .nav-list {
   display: flex;
-  gap: clamp( var(--size-500), 5vw, var(--size-900));
+  gap: clamp(var(--size-500), 5vw, var(--size-900));
 }
-.flow{
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: var(--size-700);
+.flow {
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--size-700);
 }
 /* //hero section  */
 
@@ -74,15 +74,18 @@ body {
   background-color: var(--accent-clr-100);
   margin-top: var(--fs-600);
 }
-.rounded-rectangle{
-    border-radius: var(--radius-700);
-    width: 15ch;
-    text-align: center;
-    padding: var(--size-200);
+.divider-darker {
+  background-color: var(--accent-color-900);
 }
-.centered{
- grid-column: 3/4;
- margin-right: var(--size-500);
+.rounded-rectangle {
+  border-radius: var(--radius-700);
+  width: 15ch;
+  text-align: center;
+  padding: var(--size-200);
+}
+.centered {
+  grid-column: 3/4;
+  margin-right: var(--size-500);
 }
 
 /* //4 image gallery onblue background */
@@ -120,52 +123,81 @@ body {
   border-radius: var(--radius);
 }
 /* banner */
-.consultant-banner{
-    background-color: var(--clr-primary-100);
-    height: 336px;
-    border-radius: var(--radius);
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    position: relative;
+.consultant-banner {
+  background-color: var(--clr-primary-100);
+  height: 336px;
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
 }
-.banner-description{
+.banner-description {
   margin-left: var(--size-900);
   position: relative;
 }
-.banner-description::after{
-    content: url('/assets/star-filled.svg');
-    width: 100%;
-    position: absolute;
-    top:-10em;
-   left: 0;
+.banner-description::after {
+  content: url("/assets/star-filled.svg");
+  width: 100%;
+  position: absolute;
+  top: -10em;
+  left: 0;
 }
-.banner-consultant-expert{
-    grid-column: 3/4;
-    position: absolute;
-    top: -4rem;
-    right: 20%;
-    z-index: 100;
+.banner-consultant-expert {
+  grid-column: 3/4;
+  position: absolute;
+  top: -4rem;
+  right: 20%;
+  z-index: 100;
 }
-.banner-consultant-expert::before{
-    content: url('/assets/cloud.svg');
-    position:absolute;
-   z-index: -1;
-   top: 25%;
-   right: 5%;
+.banner-consultant-expert::before {
+  content: url("/assets/cloud.svg");
+  position: absolute;
+  z-index: -1;
+  top: 25%;
+  right: 5%;
 }
 .check-list li::before {
-    content: url("assets/check-mark.svg");
-  
-  }
-/* .portfolio-card-title {
-    height: 38px;
-    max-width: 116px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 19px;
-  } */
+  content: url("assets/check-mark.svg");
+}
+/* events  */
+.events-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--size-500);
+}
+.event-date {
+  display: flex;
 
+  border-radius: var(--radius);
+  border: var(--border-100) solid var(--accent-clr-400);
+  padding: var(--button-size);
+}
+
+.event-month {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: -0.2rem;
+  text-align: left;
+}
+.event-number-day {
+  line-height: 1.2;
+  margin-top: -0.5rem;
+}
+.event-duration {
+  margin-left: -60px;
+}
+.event-date:nth-child(2) .event-duration {
+    padding: 0 1rem;
+    margin-left: -100px;
+}
+.event-duration::before {
+  content: url("/assets/clock-solid.svg");
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  margin-right: 10px;
+}
 @media (min-width: 50em) {
   :root {
     --fs-primary-heading: var(--fs-900);

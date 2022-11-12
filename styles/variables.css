@@ -7,14 +7,15 @@
 --clr-neutral-400: rgb(57, 20, 0, 0.64);
 --clr-neutral-500: rgb(57, 20, 0, 1);
 
+--accent-color-900:rgba(58, 60, 86, 1);
 --accent-clr-500: rgb(239, 109, 88, 1);
 --accent-clr-450: rgb(239, 109, 87, 1);
 --accent-clr-300: rgb(255, 255, 255, 0.64);
 --accent-clr-400: rgb(255, 255, 255, 0.3);
 --accent-clr-100: rgb(243, 209, 191, 1);
 --ff-family-primary: "Epilogue", sans-serif;
---ff-body: --ff-family-primary;
---ff-heading: --ff-family-primary;
+--ff-body: var(--ff-family-primary);
+--ff-heading: var(--ff-family-primary);
 --fw-regular: 400;
 --fw-semi-bold: 700;
 --fw-bold: 800;
