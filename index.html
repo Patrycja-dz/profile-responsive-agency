@@ -10,16 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style/sass/style.scss" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Vite App</title>
   </head>
 
   <body>
-    <header class="primary-header bg-primary-900 padding-block-400">
+ 
+    <header class="primary-header  padding-block-400 bg-primary-900">
       <div class="container">
         <div class="nav-wrapper">
           <a href="#">
-            <img src="./assets/hero-logo.svg" alt="agency" />
+            <img src="./assets/hero-logo.svg" alt="agency"/>
           </a>
           <nav class="primary-navigation">
             <ul role="list" class="nav-list">
@@ -45,6 +46,8 @@
         </div>
       </div>
     </header>
+
+
     <main>
       <section class="bg-primary-900 padding-block-900">
         <div class="container container-flex">
@@ -264,74 +267,93 @@
         </div>
       </section>
       <section class="bg-primary-900 padding-block-900">
-        <h5 class="text-accent-500">Portfolio</h5>
-        <h2 class="bg-neutral-100 fs-secondary-heading fw-bold">Latest Work</h2>
-        <ul role="list">
-          <li class="fw-regular">Show All <span class="fs-250"></span>14</li>
-          <li class="fw-regular">Design</li>
-          <li class="fw-regular">Branding</li>
-          <li class="fw-regular">Illustration</li>
-          <li class="fw-regular">Motion</li>
+        <h5
+          class="text-accent-500 fs-350 fw-regular uppercased"
+          style="text-align: center"
+        >
+          Portfolio
+        </h5>
+        <h2
+          class="text-neutral-100 fs-secondary-heading fw-bold padding-block-400"
+          style="text-align: center"
+        >
+          Latest Work
+        </h2>
+        <ul role="list" class="nav-list nav-wrapper">
+          <li class="fw-regular fs-350 text-primary-300">Show All</li>
+          <li class="fw-regular fs-350 text-primary-300">Design</li>
+          <li class="fw-regular fs-350 text-primary-300">Branding</li>
+          <li class="fw-regular fs-350 text-primary-300">Illustration</li>
+          <li class="fw-regular fs-350 text-primary-300">Motion</li>
         </ul>
-        <div class="photo-grid">
-          <div class="portfolio-card">
-            <p class="portfolio-card-title bg-neutral-100 text-priamry-400">
+        <section class="portfolio-card-wrapper container padding-block-500">
+          <div class="portfolio-card text-neutral-100 container-flex flow">
+            <p
+              class="portfolio-card-title text-priamry-400 bg-neutral-100 text-primary-400 rounded-rectangle"
+            >
               Design
             </p>
-            <h3>sofa</h3>
+            <h3 class="uppercased fs-600">sofa</h3>
           </div>
-          <div class="portfolio-card">
-            <p class="portfolio-card-title bg-neutral-100 text-priamry-400">
+          <div class="portfolio-card text-neutral-100 container-flex flow">
+            <p
+              class="portfolio-card-title text-priamry-400 bg-neutral-100 text-primary-400 rounded-rectangle"
+            >
               Branding
             </p>
-            <h3>KeyBoard</h3>
+            <h3 class="fs-600">KeyBoard</h3>
           </div>
-          <div class="portfolio-card">
-            <p class="portfolio-card-title bg-neutral-100 text-priamry-400">
+          <div class="portfolio-card text-neutral-100 container-flex flow">
+            <p
+              class="portfolio-card-title text-priamry-400 bg-neutral-100 text-primary-400 rounded-rectangle"
+            >
               Illustration
             </p>
-            <h3>Work Media</h3>
+            <h3 class="fs-600">Work Media</h3>
           </div>
-          <div class="portfolio-card">
-            <p class="portfolio-card-title bg-neutral-100 text-priamry-400">
+          <div class="portfolio-card text-neutral-100 container-flex flow">
+            <p
+              class="portfolio-card-title text-priamry-400 bg-neutral-100 text-primary-400 rounded-rectangle"
+            >
               Motion
             </p>
-            <h3>DDDone</h3>
+            <h3 class="fs-600">DDDone</h3>
           </div>
           <button
-            class="button decoration-neutral text-neutral-100 fs-button fw-super-bold"
-          >
-            Explore More
-          </button>
-          <!-- here will be consultant banner -->
-          <h5 class="text-accent-500 fw-regular">Events</h5>
-          <h2 class="fs-secondary-heading text-neutral-900 fw-bold">
-            Explore Future Conferences
-          </h2>
-          <!-- <div class="odd-columns events-grid"></div> -->
-          <section>
-            <!-- Do zastanowienia, czy potrzebna jest taka duża ilośc divow-->
-            <div class="events-board">
-              <div class="event-column">
-                <div class="event-header">
-                  <div class="event-date">
-                    <div
-                      class="event-number-day text-neutral-100 fs-primary-heading"
-                    >
-                      3
-                    </div>
-                    <h4 class="fs-600 fw semi-bold text-neutral-100">
-                      November 2021
-                    </h4>
-                    <div class="event-duration fw-regular text-neutral-100">
-                      9:00 am – 3:00 pm
-                    </div>
+          class="primary-btn decoration-neutral text-neutral-100 fs-button fw-super-bold centered"
+        >
+          Explore More
+        </button>
+        </section>
+
+        <!-- here will be consultant banner -->
+        <h5 class="text-accent-500 fw-regular">Events</h5>
+        <h2 class="fs-secondary-heading text-neutral-900 fw-bold">
+          Explore Future Conferences
+        </h2>
+        <!-- <div class="odd-columns events-grid"></div> -->
+        <section>
+          <!-- Do zastanowienia, czy potrzebna jest taka duża ilośc divow-->
+          <div class="events-board">
+            <div class="event-column">
+              <div class="event-header">
+                <div class="event-date">
+                  <div
+                    class="event-number-day text-neutral-100 fs-primary-heading"
+                  >
+                    3
+                  </div>
+                  <h4 class="fs-600 fw semi-bold text-neutral-100">
+                    November 2021
+                  </h4>
+                  <div class="event-duration fw-regular text-neutral-100">
+                    9:00 am – 3:00 pm
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </section>
     </main>
     <script type="module" src="/main.js"></script>
