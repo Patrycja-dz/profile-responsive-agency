@@ -18,7 +18,9 @@ body {
   display: flex;
   gap: 1rem;
 }
-
+.gap{
+    gap: var(--size-900);
+}
 /* //button */
 .primary-btn {
   border-radius: var(--radius);
@@ -198,6 +200,26 @@ body {
   display: inline-block;
   margin-right: 10px;
 }
+/* slider */
+.slider {
+    display: flex;
+  }
+
+  .slider > * {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  .a11y-slider-prev,
+  .a11y-slider-next{
+    width: 48px;
+    height: 48px;
+  }
+
+
+  .arrow-btn{
+    align-self: flex-end;
+    justify-self: end;
+  }
 @media (min-width: 50em) {
   :root {
     --fs-primary-heading: var(--fs-900);
