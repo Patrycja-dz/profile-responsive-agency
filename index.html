@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+    />
+    <title>Vite App</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Vite App</title>
-</head>
-
-<body>
-  <header class="primary-header bg-primary-900 padding-block-400">
-    <div class="container">
-      <div class="nav-wrapper">
-        <a href="#">
-          <img src="./assets/hero-logo.svg" alt="agency" />
-        </a>
-        <nav class="primary-navigation">
-          <ul role="list" class="nav-list">
-            <li class="nav-list-item ">
-              <a href="#" class="text-neutral-100">About</a>
-            </li>
-            <li class="nav-list-item text-neutral-100">
-              <a href="#" class="text-neutral-100">Services</a>
-            </li>
-            <li class="nav-list-item text-neutral-100">
-              <a href="#" class="text-neutral-100">Pricing</a>
-            </li>
-            <li class="nav-list-item text-neutral-100">
-              <a href="#" class="text-neutral-100">Blog</a>
-            </li>
-          </ul>
-        </nav>
-        <button class="btn uppercased text-neutral-100 decoration-neutral fw-super-bold fs-button">
-          Contact
-        </button>
+  <body>
+    <header class="primary-header padding-block-400 bg-primary-900">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#">
+            <img src="./assets/hero-logo.svg" alt="agency" />
+          </a>
+          <nav class="primary-navigation">
+            <ul role="list" class="nav-list">
+              <li class="nav-list-item text-neutral-100">
+                <a href="#">About</a>
+              </li>
+              <li class="nav-list-item text-neutral-100">
+                <a href="#">Services</a>
+              </li>
+              <li class="nav-list-item text-neutral-100">
+                <a href="#">Pricing</a>
+              </li>
+              <li class="nav-list-item text-neutral-100">
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </nav>
+          <button
+            class="primary-btn uppercased text-neutral-100 decoration-neutral fw-super-bold fs-button"
+          >
+            Contact
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main>
+    </header>
 
-    <section class="bg-primary-900 padding-block-900">
-      <div class="container container-flex">
+    <main>
+      <section class="bg-primary-900 padding-block-900">
+        <div class="container container-flex">
           <div class="flow">
-            <h5 class="text-accent-500 uppercased padding-block-400 fw-regular">Modern Studio</h5>
+            <h5 class="text-accent-500 uppercased padding-block-400 fw-regular">
+              Modern Studio
+            </h5>
             <h1 class="fs-primary-heading fw-bold text-neutral-100">
               We’re Help To Build Your Dream Project
             </h1>
@@ -54,13 +64,18 @@
               Agency provides a full service range including technical skills,
               design, business understanding.
             </p>
-            <div class="container-flex">        
-              <button class="btn uppercased bg-accent-500 text-neutral-100 fw-super-bold fs-button padding-block-900">How we work</button>
-              <span class="fw-regular text-neutral-100 padding-inline-700">Contact us</span>
-            </div>
+            <button
+              class="primary-btn uppercased bg-accent-500 text-neutral-100 fw-super-bold fs-button padding-block-900"
+            >
+              How we work
+            </button>
+            <span class="fw-regular text-neutral-100 padding-inline-700"
+              >Contact us</span
+            >
+
             <div class="hero-quote-idea">
               <img src="assets/hero-little-purple-circle.svg" alt="" />
-              <div class="padding-inline-400  hero-quote">
+              <div class="padding-inline-400 hero-quote">
                 <p class="fw-regular text-primary-300">
                   "Put themselves in the merchant's shoes"
                 </p>
@@ -68,63 +83,73 @@
               </div>
             </div>
           </div>
-          <img src="assets/hero-image.svg" alt="hero image"/>
-      </div>
-    </section>
-    
+
+          <img src="assets/hero-image.svg" alt="hero image" />
+        </div>
+      </section>
       <div class="container padding-block-700">
-        <img class='padding-block-400' src="assets/brands.svg" />
+        <img class="padding-block-400" src="assets/brands.svg" />
         <div class="divider"></div>
       </div>
-
-    <section class="clr-primary-100 padding-block-400">
-      <div class="container container-flex">
-          <img src="assets/design-agency-image.svg" alt="design agency image" />
-          <div class="flow padding-inline-900">
-            <h5 class="text-accent-500 uppercased fw-regular padding-block-500">About</h5>
-            <h2 class="fs-secondary-heading text-primary-400 fw-bold">An Experience Design Agency</h2>
-            <p class="fs-400 fw-regular padding-block-400">Provides a full service range</p>
-            <p class="fw-regular padding-block-400 text-color-350 text">
-            Ability to put themselves in the merchant's shoes. It is meant to
-            partner on the long run, and work as an extension of the
-            merchant's team.
+      <section class="clr-primary-100 padding-block-700">
+        <div class="container container-flex gap">
+          <img
+            src="/assets/design-agency-image.svg"
+            alt="design agency image"
+          />
+          <div class="padding-inline-500">
+            <h5 class="text-accent-500 uppercased fw-regular padding-block-700">
+              About
+            </h5>
+            <h2
+              class="fs-secondary-heading text-primary-400 fw-bold padding-block-500"
+            >
+              An Experience Design Agency
+            </h2>
+            <p class="fs-400 fw-regular">Provides a full service range</p>
+            <p class="fw-regular padding-block-500">
+              Ability to put themselves in the merchant's shoes. It is meant to
+              partner on the long run, and work as an extension of the
+              merchant's team.
             </p>
-            <div class="padding-block-500">
-              <button class="btn uppercased fw-super-bold fs-button bg-neutral-100 btn-shadow">About Us</button>
-            </div>
-           </div>
+            <button class="primary-btn uppercased fw-super-bold fs-button">
+              About Us
+            </button>
+          </div>
         </div>
-        <div class="container odd-columns padding-block-900">
-            <div class="column">
-              <h3 class="fs-600 fw-bold text-priamry-400">42%</h3>
-              <p class="fs-400 fw-regular text-primary-400">Years of experience</p>
+      </section>
+      <section>
+        <div class="container">
+          <div class="odd-columns">
+            <div>
+              <h3 class="fs-600 fw-bold">42%</h3>
+              <p class="fs-400 fw-regular">Years of experience</p>
             </div>
-            <div class="column">
-              <h3 class="fs-600 fw-bold text-primary-400">73+</h3>
-              <p class="fs-400 fw-regular text-primary-400">Agency members</p>
+            <div>
+              <h3 class="fs-600 fw-bold">73+</h3>
+              <p class="fs-400 fw-regular">Agency members</p>
             </div>
-            <div class="column">
-              <h3 class="fs-600 fw-bold text-primary-400">5.000</h3>
-              <p class="fs-400 fw-regular text-priamry-400">Projects complete</p>
+            <div>
+              <h3 class="fs-600 fw-bold">5.000</h3>
+              <p class="fs-400 fw-regular">Projects complete</p>
             </div>
-        </div>
-        <div class="container even-columns">
-          <div>
+          </div>
+          <div class="even-columns">
             <h5 class="text-accent-500 uppercased fw-regular">how we work</h5>
-            <h3 class="fs-600 text-primary-400 fw-bold padding-block-400">
-              Making Your Projects<br> Look Awesome
+            <h3 class="fs-600 text-primary-400 fw-bold">
+              Making Your Projects Look Awesome
             </h3>
-            <p class="text-color-350 fw-regular ">
+            <p class="text-color-350 fw-regular">
               Technical skills, design, business understanding, ability to put
               themselves in the merchant's shoes.
             </p>
-            <p class="text-primary-400 fw-regular padding-block-500">Read more</p>
-          </div>
-              <ul role="list" class="numbered-list padding-block-700 padding-inline-400">
+            <p class="text-primary-400 fw-regular">Read more</p>
+            <div>
+              <ul role="list" class="numbered-list">
                 <li>
-                    <h4 class="fs-500 fw-semi-bold">
-                      Full service range including
-                    </h4>
+                  <h4 class="fs-500 fw-semi-bold counter">
+                    Full service range including
+                  </h4>
                 </li>
                 <li>
                   <h4 class="fs-500 fw-semi-bold counter">
@@ -137,199 +162,421 @@
                   </h4>
                 </li>
               </ul>
-         </div>
-    </section>
-
-
-      <section>
-         
-      <div class="container padding-block-500">
-        <div class="divider"></div>
-      </div>
-        <div class="container container-flex padding-block-900">
-          <div class="video-wrapper">
-          <img src="assets/video.svg" alt="video image" class="video-img"/>
-          <button class="play-video-btn">
-            <img src="assets/play-arrow.svg" class="video-player"/>
-          </button>
+            </div>
           </div>
-          <div class="flow padding-inline-900">
-            <h5 class="text-accent-500 uppercased fw-regular padding-block-400">Video Reel</h5>
-            <h3 class="fs-600 text-primary-400 fw-bold">
-              Unlock The Greatest Value Possible
-            </h3>
-            <p class="text-color-350 fw-regular padding-block-500">
-              Design, business understanding, ability to put themselves in the
-              merchant's shoes meant to partner.
-            </p>
+          <div class="even-columns">
+            <img src="assets/video.svg" alt="video image" />
+            <div>
+              <h5 class="text-accent-500 uppercased fw-regular">Video Reel</h5>
+              <h3 class="fs-600 text-primary-400 fw-bold">
+                Unlock The Greatest Value Possible
+              </h3>
+              <p class="text-color-350 fw-regular">
+                Design, business understanding, ability to put themselves in the
+                merchant's shoes meant to partner.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="even-columns">
-          <div>
-            <h5 class="text-accent-500 uppercased fw-regular">Features</h5>
-            <h2 class="fs-secondary-heading text-primary-400 fw-bold">
-              Give Your Site A New Look
-            </h2>
-            <p class="text-primary-400 fs-400">
-              Service range including technical skills, design, business
-              understanding.
-            </p>
-            <ul role="list" class="check-list">
-              <li>Range including technical skills</li>
-              <li>Business understanding</li>
-              <li>Partner on the long run</li>
-            </ul>
+          <div class="even-columns">
+            <div>
+              <h5 class="text-accent-500 uppercased fw-regular">Features</h5>
+              <h2 class="fs-secondary-heading text-primary-400 fw-bold">
+                Give Your Site A New Look
+              </h2>
+              <p class="text-primary-400 fs-400">
+                Service range including technical skills, design, business
+                understanding.
+              </p>
+              <ul role="list" class="check-list">
+                <li>Range including technical skills</li>
+                <li>Business understanding</li>
+                <li>Partner on the long run</li>
+              </ul>
+            </div>
+            <img src="assets/site-new-look.svg" alt="" srcset="" />
           </div>
-          <img src="assets/site-new-look.svg" alt="" srcset="" />
+          <div class="odd-columns">
+            <div>
+              <h5 class="text-accent-500">Features</h5>
+              <p class="text-primary-400 fs-400">
+                Long run, and work as an extension of the merchant's team.
+              </p>
+              <p class="text-primary-400">Read More</p>
+            </div>
+            <div class="bg-neutral-100">
+              <img src="assets/oval.svg" alt="" />
+              <h4 class="fs-500 text-primary-400 fw-semi-bold">Professional</h4>
+              <p class="text-color-350">
+                Full service range including technical skills, design.
+              </p>
+            </div>
+            <div class="decoration-neutral">
+              <h4 class="fs-500 text-primary-400 fw-semi-bold">
+                Accessibility
+              </h4>
+              <p class="text-color-350">
+                Business understanding, ability to put themselves.
+              </p>
+            </div>
+          </div>
+          <div class="even-columns">
+            <img src="assets/digital-products.svg" alt="" />
+            <div>
+              <h5 class="text-accent-500 fw-regular">Service</h5>
+              <h2 class="fw-bold fs-secondary-heading">
+                Making ComplexDigital Products
+              </h2>
+              <p class="fs-500 text-primary-400">
+                Agency provides a full service range including technical skills,
+                design, business.
+              </p>
+              <div>
+                <img src="" alt="" />
+                <span class="fs-200 text-color-350"
+                  >"Understanding, ability to put themselves in the merchant's
+                  shoes. It is meant to partner."</span
+                >
+                <p class="text-primary-400">Jenny Murtaugh</p>
+              </div>
+              <button class="button bg-neutral-100 text-primary-400">
+                Explore
+              </button>
+            </div>
+          </div>
+          <h5 class="text-accent-500 fw-regular">Service</h5>
+          <h3 class="fs-600 fw-bold text-primary-400">
+            How Our Agency Can Help
+          </h3>
+          <div class="odd-columns decoration-neutral">
+            <div>
+              <img src="assets/design-icon.svg" alt="" />
+              <h4 class="fs-500 text-primary-400 fw-semi-bold">Design</h4>
+              <p class="fw-regular text-color-350">
+                Agency provides a full service range including technical skills,
+                design.
+              </p>
+              <p class="text-priamry-400 fw-regular">Learn More</p>
+            </div>
+            <div>
+              <img src="assets/development-icon.svg" alt="" />
+              <h4 class="fs-500 text-primary-400 fw-semi-bold">Development</h4>
+              <p class="fw-regular text-color-350">
+                Full service range including technical skills, design, business.
+              </p>
+              <p class="text-priamry-400 fw-regular">Discover More</p>
+            </div>
+            <div>
+              <img src="assets/marketing-icon.svg" alt="" />
+              <h4 class="fs-500 text-primary-400 fw-semi-bold">Marketing</h4>
+              <p class="fw-regular text-color-350">
+                Technical skills, design, business understanding, ability.
+              </p>
+              <p class="text-priamry-400 fw-regular">Explore Now</p>
+            </div>
+          </div>
         </div>
       </section>
-        <div class="odd-columns">
-          <div>
-            <h5 class="text-accent-500">Features</h5>
-            <p class="text-primary-400 fs-400">
-              Long run, and work as an extension of the merchant's team.
-            </p>
-            <p class="text-primary-400">Read More</p>
-          </div>
-          <div class="bg-neutral-100">
-            <img src="assets/oval.svg" alt="" />
-            <h4 class="fs-500 text-primary-400 fw-semi-bold">Professional</h4>
-            <p class="text-color-350">
-              Full service range including technical skills, design.
-            </p>
-          </div>
-          <div class="decoration-neutral">
-            <h4 class="fs-500 text-primary-400 fw-semi-bold">
-              Accessibility
-            </h4>
-            <p class="text-color-350">
-              Business understanding, ability to put themselves.
-            </p>
-          </div>
-        </div>
-        <div class="even-columns">
-          <img src="assets/digital-products.svg" alt="" />
-          <div>
-            <h5 class="text-accent-500 fw-regular">Service</h5>
-            <h2 class="fw-bold fs-secondary-heading">
-              Making ComplexDigital Products
-            </h2>
-            <p class="fs-500 text-primary-400">
-              Agency provides a full service range including technical skills,
-              design, business.
-            </p>
-            <div>
-              <img src="" alt="" />
-              <span class="fs-200 text-color-350">"Understanding, ability to put themselves in the merchant's
-                shoes. It is meant to partner."</span>
-              <p class="text-primary-400">Jenny Murtaugh</p>
-            </div>
-            <button class="btn bg-neutral-100 text-primary-400">
-              Explore
-            </button>
-          </div>
-        </div>
-        <h5 class="text-accent-500 fw-regular">Service</h5>
-        <h3 class="fs-600 fw-bold text-primary-400">
-          How Our Agency Can Help
-        </h3>
-        <div class="odd-columns decoration-neutral">
-          <div>
-            <img src="assets/design-icon.svg" alt="" />
-            <h4 class="fs-500 text-primary-400 fw-semi-bold">Design</h4>
-            <p class="fw-regular text-color-350">
-              Agency provides a full service range including technical skills,
-              design.
-            </p>
-            <p class="text-priamry-400 fw-regular">Learn More</p>
-          </div>
-          <div>
-            <img src="assets/development-icon.svg" alt="" />
-            <h4 class="fs-500 text-primary-400 fw-semi-bold">Development</h4>
-            <p class="fw-regular text-color-350">
-              Full service range including technical skills, design, business.
-            </p>
-            <p class="text-priamry-400 fw-regular">Discover More</p>
-          </div>
-          <div>
-            <img src="assets/marketing-icon.svg" alt="" />
-            <h4 class="fs-500 text-primary-400 fw-semi-bold">Marketing</h4>
-            <p class="fw-regular text-color-350">
-              Technical skills, design, business understanding, ability.
-            </p>
-            <p class="text-priamry-400 fw-regular">Explore Now</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="bg-primary-900 padding-block-900">
-      <h5 class="text-accent-500">Portfolio</h5>
-      <h2 class="bg-neutral-100 fs-secondary-heading fw-bold">Latest Work</h2>
-      <ul role="list">
-        <li class="fw-regular">Show All <span class="fs-250"></span>14</li>
-        <li class="fw-regular">Design</li>
-        <li class="fw-regular">Branding</li>
-        <li class="fw-regular">Illustration</li>
-        <li class="fw-regular">Motion</li>
-      </ul>
-      <div class="photo-grid">
-        <div class="portfolio-card">
-          <p class="portfolio-card-title bg-neutral-100 text-priamry-400">
-            Design
-          </p>
-          <h3>sofa</h3>
-        </div>
-        <div class="portfolio-card">
-          <p class="portfolio-card-title bg-neutral-100 text-priamry-400">
-            Branding
-          </p>
-          <h3>KeyBoard</h3>
-        </div>
-        <div class="portfolio-card">
-          <p class="portfolio-card-title bg-neutral-100 text-priamry-400">
-            Illustration
-          </p>
-          <h3>Work Media</h3>
-        </div>
-        <div class="portfolio-card">
-          <p class="portfolio-card-title bg-neutral-100 text-priamry-400">
-            Motion
-          </p>
-          <h3>DDDone</h3>
-        </div>
-        <button class="btn decoration-neutral text-neutral-100 fs-button fw-super-bold">
-          Explore More
-        </button>
-        <!-- here will be consultant banner -->
-        <h5 class="text-accent-500 fw-regular">Events</h5>
-        <h2 class="fs-secondary-heading text-neutral-900 fw-bold">
-          Explore Future Conferences
+      <section class="bg-primary-900 padding-block-900">
+        <h5
+          class="text-accent-500 fs-350 fw-regular uppercased"
+          style="text-align: center"
+        >
+          Portfolio
+        </h5>
+        <h2
+          class="text-neutral-100 fs-secondary-heading fw-bold padding-block-400"
+          style="text-align: center"
+        >
+          Latest Work
         </h2>
-        <!-- <div class="odd-columns events-grid"></div> -->
-        <section>
-          <!-- Do zastanowienia, czy potrzebna jest taka duża ilośc divow-->
-          <div class="events-board">
-            <div class="event-column">
-              <div class="event-header">
-                <div class="event-date">
-                  <div class="event-number-day text-neutral-100 fs-primary-heading">
-                    3
-                  </div>
-                  <h4 class="fs-600 fw semi-bold text-neutral-100">
-                    November 2021
+        <ul role="list" class="nav-list nav-wrapper">
+          <li class="fw-regular fs-350 text-primary-300">Show All</li>
+          <li class="fw-regular fs-350 text-primary-300">Design</li>
+          <li class="fw-regular fs-350 text-primary-300">Branding</li>
+          <li class="fw-regular fs-350 text-primary-300">Illustration</li>
+          <li class="fw-regular fs-350 text-primary-300">Motion</li>
+        </ul>
+        <section class="portfolio-card-wrapper container padding-block-900">
+          <div class="portfolio-card text-neutral-100 container-flex flow">
+            <p
+              class="portfolio-card-title text-priamry-400 bg-neutral-100 text-primary-400 rounded-rectangle"
+            >
+              Design
+            </p>
+            <h3 class="uppercased fs-600">sofa</h3>
+          </div>
+          <div class="portfolio-card text-neutral-100 container-flex flow">
+            <p
+              class="portfolio-card-title text-priamry-400 bg-neutral-100 text-primary-400 rounded-rectangle"
+            >
+              Branding
+            </p>
+            <h3 class="fs-600">KeyBoard</h3>
+          </div>
+          <div class="portfolio-card text-neutral-100 container-flex flow">
+            <p
+              class="portfolio-card-title text-priamry-400 bg-neutral-100 text-primary-400 rounded-rectangle"
+            >
+              Illustration
+            </p>
+            <h3 class="fs-600">Work Media</h3>
+          </div>
+          <div class="portfolio-card text-neutral-100 container-flex flow">
+            <p
+              class="portfolio-card-title text-priamry-400 bg-neutral-100 text-primary-400 rounded-rectangle"
+            >
+              Motion
+            </p>
+            <h3 class="fs-600">DDDone</h3>
+          </div>
+          <button
+            class="primary-btn decoration-neutral text-neutral-100 fs-button fw-super-bold centered"
+          >
+            Explore More
+          </button>
+        </section>
+
+        <div class="container">
+          <div class="consultant-banner padding-block-900">
+            <div class="banner-description">
+              <h5 class="text-accent-500 fs-350 fw-regular uppercased">
+                get started
+              </h5>
+              <h4
+                class="text-primary-400 fw-semi-bold fs-500 padding-block-400"
+              >
+                We Help Companies Move Faster
+              </h4>
+              <button
+                class="primary-btn text-neutral-100 fs-button fw-super-bold centered uppercased bg-accent-500"
+              >
+                contact us
+              </button>
+            </div>
+            <img src="/assets/analysing-graph.svg" alt="analysing graph" />
+            <div class="banner-consultant-expert">
+              <img src="/assets/consultant.svg" />
+            </div>
+          </div>
+        </div>
+        <section class="events-section padding-block-900">
+          <div class="container">
+            <h5
+              class="text-accent-500 fs-350 fw-regular uppercased"
+              style="text-align: center"
+            >
+              Events
+            </h5>
+            <h2
+              class="text-neutral-100 fs-secondary-heading fw-bold padding-block-400"
+              style="text-align: center"
+            >
+              Explore Future <br />Conferences
+            </h2>
+            <div class="events-board padding-block-500">
+              <div class="event-date">
+                <div
+                  class="text-neutral-100 fs-primary-heading padding-inline-400 fw-semi-bold"
+                >
+                  3
+                </div>
+                <div class="event-month">
+                  <h4
+                    class="event-number-day fs-500 fw-semi-bold text-neutral-100 padding-block-400"
+                  >
+                    November <br />2021
                   </h4>
                   <div class="event-duration fw-regular text-neutral-100">
                     9:00 am – 3:00 pm
+                    <div class="divider divider-darker"></div>
+                    <h4
+                      class="fs-500 fw-semi-bold text-neutral-100 padding-block-500"
+                    >
+                      Design Weeks
+                    </h4>
+                    <p class="fs-350 text-primary-300">
+                      Digital agency is a business you hire to outsource your
+                      digital.
+                    </p>
+                    <p class="padding-block-500">Explore Now</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="event-date">
+                <div
+                  class="text-neutral-100 fs-primary-heading padding-inline-400 fw-semi-bold"
+                >
+                  15
+                </div>
+                <div class="event-month">
+                  <h4
+                    class="event-number-day fs-500 fw-semi-bold text-neutral-100 padding-block-400"
+                  >
+                    November <br />2021
+                  </h4>
+                  <div class="event-duration fw-regular text-neutral-100">
+                    1:00 pm – 8:00 pm
+                    <div class="divider divider-darker"></div>
+                    <h4
+                      class="fs-500 fw-semi-bold text-neutral-100 padding-block-500"
+                    >
+                      Interior Design
+                    </h4>
+                    <p class="fs-350 text-primary-300">
+                      Marketing efforts, instead of handling in-house.
+                    </p>
+                    <p class="padding-block-500">Explore Now</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="event-date">
+                <div
+                  class="text-neutral-100 fs-primary-heading padding-inline-400 fw-semi-bold"
+                >
+                  2
+                </div>
+                <div class="event-month">
+                  <h4
+                    class="event-number-day fs-500 fw-semi-bold text-neutral-100 padding-block-400"
+                  >
+                    December<br />2021
+                  </h4>
+                  <div class="event-duration fw-regular text-neutral-100">
+                    10:00 am – 2:00 pm
+                    <div class="divider divider-darker"></div>
+                    <h4
+                      class="fs-500 fw-semi-bold text-neutral-100 padding-block-500"
+                    >
+                      The F design events
+                    </h4>
+                    <p class="fs-350 text-primary-300">
+                      Provide your business with a variety of digital solutions
+                      to promote.
+                    </p>
+                    <p class="padding-block-500">Explore Now</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-      </div>
-    </section>
-  </main>
-  <script type="module" src="/main.js"></script>
-</body>
+        <section class="developers-carousel padding-block-700 container">
+          <h5 class="text-accent-500 fs-350 fw-regular uppercased">Our Team</h5>
+          <div class="container-flex">
+            <h2
+              class="text-neutral-100 fs-secondary-heading fw-bold padding-block-400"
+            >
+              Team of Designers <br />
+              and Developers
+            </h2>
+          </div>
+          <div>
+            <ul class="slider">
+              <li>
+                <img src="/assets/Azah-Anyeni.svg" />
+                <div class="padding-block-500">
+                  <h4 class="fs-500 text-neutral-100">Azah Anyeni</h4>
+                  <p class="text-primary-300">Designer</p>
+                </div>
+              </li>
+              <li>
+                <img src="/assets/Roelof.svg" />
+                <div class="padding-block-500">
+                  <h4 class="fs-500 text-neutral-100">Roelof Bekkenenks</h4>
+                  <p class="text-primary-300">React Developer</p>
+                </div>
+              </li>
+              <li>
+                <img src="/assets/Leonardo-Oliviera.svg" />
+                <div class="padding-block-500">
+                  <h4 class="fs-500 text-neutral-100">Leonardo Oliveira</h4>
+                  <p class="text-primary-300">Illustrator</p>
+                </div>
+              </li>
+              <li>
+                <img src="/assets/Izabela-Tabakova.svg" />
+                <div class="padding-block-500">
+                  <h4 class="fs-500 text-neutral-100">Izabella Tabakova</h4>
+                  <p class="text-primary-300">Product Designer</p>
+                </div>
+              </li>
+              <li>
+                <img src="/assets/edward-cisneros-_H6wpor9mjs-unsplash.jpg" />
+                <div class="padding-block-500">
+                  <h4 class="fs-500 text-neutral-100">Anne Cobbler</h4>
+                  <p class="text-primary-300">UX designer</p>
+                </div>
+              </li>
+              <li>
+                <img src="/assets/Leonardo-Oliviera.svg" />
+                <div class="padding-block-500">
+                  <h4 class="fs-500 text-neutral-100">Joseph Cooper</h4>
+                  <p class="text-primary-300">Java Softwere Engenieer</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
 
+        <div class="container container-flex gap">
+          <img src="/assets/Ren-Delon.svg" />
+          <div class="padding-inline-500">
+            <h5
+              class="text-accent-500 fs-350 fw-regular uppercased padding-block-500"
+            >
+              Founder Words
+            </h5>
+            <h3 class="fs-600 fw-bold text-neutral-100">
+              Digital agency is a business you hire to outsource your digital
+              marketing efforts
+            </h3>
+            <p class="text-neutral-100 fs-400 padding-block-400">Ren Delan</p>
+            <p class="text-primary-300 fs-200">Founder</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- light section -->
+      <section>
+        <section class="map">
+          <iframe
+          class="map-section"
+            height="720"
+            width="100%"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=18.56449127197266%2C54.31371946884494%2C18.708686828613285%2C54.38975407400168&amp;layer=mapnik&amp;marker=54.351754357424696%2C18.63658905029297"
+          ></iframe
+          ><br /><small
+            ><a
+              href="https://www.openstreetmap.org/?mlat=54.3518&amp;mlon=18.6366#map=13/54.3518/18.6366"
+            ></a
+          ></small>
+         <div class="container">
+          <form class="map-form padding-inline-700 padding-block-900">
+            <h4 class="fs-500 fw-semi-bold text-primary-400">Get In Touch</h4>
+            <input type="email" name="email" id="" placeholder="Your email" class="form-field padding-inline-500" aria-describedby="user-email-hint">
+            <select name="subject" id=""  class="form-field padding-inline-500">
+              <option value="">Subject</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <textarea name="" id="" cols="230" rows="5" placeholder="Message" class="form-field padding-inline-500"></textarea>
+          </form>
+         </div>
+        </section>
+      </section>
+    </main>
+    <script
+      src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js "
+      defer
+    ></script>
+    <script src="app.js" defer></script>
+    <script type="module" src="/main.js" defer></script>
+  </body>
 </html>
