@@ -71,7 +71,7 @@ body {
     margin-top: $fs-600;
 }
 .check-list li::before {
-    content: url("assets/check-mark.svg");
+    content: url("/assets/check-mark.svg");
   }
 //4 image gallery onblue background
 .photo-grid {

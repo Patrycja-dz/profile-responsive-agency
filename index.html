@@ -11,8 +11,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+    />
     <title>Vite App</title>
-    <script type="module" src="/main.js" defer></script>
+    <script src="app.js" defer></script>
   </head>
 
   <body>
@@ -84,23 +88,27 @@
           <img src="assets/hero-image.svg" alt="hero image" />
         </div>
       </section>
-      <section class="clr-primary-100 padding-block-900">
-        <div class="container">
-          <img class="padding-block-400" src="assets/brands.svg" />
-          <div class="divider"></div>
-          <div class="even-columns padding-block-900">
-            <div>
-              <img
-                src="assets/design-agency-image.svg"
-                alt="design agency image"
-              />
-            </div>
-            <h5 class="text-accent-500 uppercased fw-regular">About</h5>
-            <h2 class="fs-secondary-heading text-primary-400 fw-bold">
+      <div class="container padding-block-700">
+        <img class="padding-block-400" src="assets/brands.svg" />
+        <div class="divider"></div>
+      </div>
+      <section class="clr-primary-100 padding-block-700">
+        <div class="container container-flex gap">
+          <img
+            src="/assets/design-agency-image.svg"
+            alt="design agency image"
+          />
+          <div class="padding-inline-500">
+            <h5 class="text-accent-500 uppercased fw-regular padding-block-700">
+              About
+            </h5>
+            <h2
+              class="fs-secondary-heading text-primary-400 fw-bold padding-block-500"
+            >
               An Experience Design Agency
             </h2>
             <p class="fs-400 fw-regular">Provides a full service range</p>
-            <p class="fw-regular">
+            <p class="fw-regular padding-block-500">
               Ability to put themselves in the merchant's shoes. It is meant to
               partner on the long run, and work as an extension of the
               merchant's team.
@@ -109,6 +117,10 @@
               About Us
             </button>
           </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
           <div class="odd-columns">
             <div>
               <h3 class="fs-600 fw-bold">42%</h3>
@@ -460,25 +472,59 @@
               Team of Designers <br />
               and Developers
             </h2>
-            <!-- <button class="a11y-slider-prev arrow-btn">
-              <img src="/assets/arrow-left-solid.svg" />
-            </button>
-            <button class="a11y-slider-next arrow-btn">
-              <img src="/assets/arrow-right-solid.svg" />
-            </button> -->
           </div>
           <ul class="slider">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
+            <li>
+              <img src="/assets/Azah-Anyeni.svg" />
+              <div class="padding-block-500">
+                <h4 class="fs-500 text-neutral-100">Azah Anyeni</h4>
+                <p class="text-primary-300">Designer</p>
+              </div>
+            </li>
+            <li>
+              <img src="/assets/Roelof.svg" />
+              <div class="padding-block-500">
+                <h4 class="fs-500 text-neutral-100">Roelof Bekkenenks</h4>
+                <p class="text-primary-300">React Developer</p>
+              </div>
+            </li>
+            <li>
+              <img src="/assets/Leonardo-Oliviera.svg" />
+              <div class="padding-block-500">
+                <h4 class="fs-500 text-neutral-100">Leonardo Oliveira</h4>
+                <p class="text-primary-300">Illustrator</p>
+              </div>
+            </li>
+            <li>
+              <img src="/assets/Izabela-Tabakova.svg" />
+              <div class="padding-block-500">
+                <h4 class="fs-500 text-neutral-100">Izabella Tabakova</h4>
+                <p class="text-primary-300">Product Designer</p>
+              </div>
+            </li>
+            <li>
+              <img src="/assets/edward-cisneros-_H6wpor9mjs-unsplash.jpg" />
+              <div class="padding-block-500">
+                <h4 class="fs-500 text-neutral-100">Anne Cobbler</h4>
+                <p class="text-primary-300">UX designer</p>
+              </div>
+            </li>
+            <li>
+              <img src="/assets/Leonardo-Oliviera.svg"/>
+              <div class="padding-block-500">
+                <h4 class="fs-500 text-neutral-100">Joseph Cooper</h4>
+                <p class="text-primary-300">Java Softwere Engenieer</p>
+              </div>
+            </li>
           </ul>
         </section>
 
         <div class="container container-flex gap">
           <img src="/assets/Ren-Delon.svg" />
           <div class="padding-inline-500">
-            <h5 class="text-accent-500 fs-350 fw-regular uppercased padding-block-500">
+            <h5
+              class="text-accent-500 fs-350 fw-regular uppercased padding-block-500"
+            >
               Founder Words
             </h5>
             <h3 class="fs-600 fw-bold text-neutral-100">
@@ -491,5 +537,7 @@
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
+    <script type="module" src="/main.js" defer></script>
   </body>
 </html>

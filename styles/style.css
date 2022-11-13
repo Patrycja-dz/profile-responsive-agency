@@ -159,7 +159,7 @@ body {
   right: 5%;
 }
 .check-list li::before {
-  content: url("assets/check-mark.svg");
+  content: url("/assets/check-mark.svg");
 }
 /* events  */
 .events-board {
@@ -203,23 +203,27 @@ body {
 /* slider */
 .slider {
     display: flex;
+    gap: var(--size-100);
+    list-style: none;
   }
 
   .slider > * {
-    width: 100%;
+    max-width: 100%;
     flex: 0 0 auto;
+    position: relative;
+   
   }
-  .a11y-slider-prev,
-  .a11y-slider-next{
-    width: 48px;
-    height: 48px;
+  .slider img{
+    border-radius: var(--radius);
+    border: var(--border-100) solid var(--accent-clr-400);
+    height: 220px;
+    width: 270px;
   }
 
 
-  .arrow-btn{
-    align-self: flex-end;
-    justify-self: end;
-  }
+
+
+
 @media (min-width: 50em) {
   :root {
     --fs-primary-heading: var(--fs-900);
