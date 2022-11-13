@@ -10,7 +10,7 @@ const slider = new A11YSlider(document.querySelector(".slider"), {
       slidesToShow: 2,
     },
     760: {
-    //   arrows: true,
+      arrows: true,
       slidesToShow: 4,
     },
   },
