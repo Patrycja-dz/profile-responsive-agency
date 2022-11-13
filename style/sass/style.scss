@@ -1,24 +1,21 @@
 
-// @use 'reset.scss';
-// @use 'variables.scss';
-// @use 'basic-classes.scss';
-// @use 'mixins.scss';
+@use 'reset.scss' as r;
+@use 'variables.scss' as v;
+@use 'basic-classes.scss' as b;
+@use 'mixins.scss' as m;
 
-@import 'reset.scss';
-@import 'variables.scss';
-@import 'basic-classes.scss';
-@import 'mixins.scss';
+
 body {
-    font-size: $fs-body;
-    font-family: $ff-family-primary;
+    font-size: v.$fs-body;
+    font-family: v.$ff-family-primary;
 }
 //utilities 
 
 //container
 .container {
-    $max-width: 1170px;
-    $padding: 1rem;
-    width: (min($max-width), 100% - $padding) * 2;
+    max-width: v.$max-width;
+    padding: v.$size-400;
+    // width: (min(v.$max-width), 100% - v.$size-400) * 2; error here
     margin-inline: auto;
 }
 
@@ -29,17 +26,17 @@ body {
 
 //button
 .primary-btn {
-    @include primary-btn;
+    @include m.primary-btn;
 }
 
 //navigation 
 .nav-wrapper {
-    @include basic-flex-settings;
+    @include m.basic-flex-settings;
 }
 
 .nav-list {
     display: flex;
-    gap: clamp(($size-500), 5vw, $size-900);
+    gap: clamp((v.$size-500), 5vw, v.$size-900);
 }
 
 //hero section 
@@ -50,14 +47,14 @@ body {
 }
 
 .hero-quote {
-    @include flex-column
+    @include m.flex-column
 }
 
 //decorators 
 
 .decoration-neutral {
     background-color: transparent;
-    border: $border-100 solid $accent-clr-400;
+    border: v.$border-100 solid v.$accent-clr-400;
 }
 
 .uppercased {
@@ -65,17 +62,17 @@ body {
 }
 
 .divider {
-    height: $border-100;
+    height: v.$border-100;
     width: 100%;
-    background-color: $accent-clr-100;
-    margin-top: $fs-600;
+    background-color: v.$accent-clr-100;
+    margin-top: v.$fs-600;
 }
 .check-list li::before {
     content: url("/assets/check-mark.svg");
   }
 //4 image gallery onblue background
 .photo-grid {
-    @include grid-basic-settings;
+    @include m.grid-basic-settings;
 }
 
 //do zmienienia 
@@ -117,8 +114,8 @@ body {
 
 @media (min-width: 50em) {
     :root {
-        --fs-primary-heading: $fs-900;
-        --fs-secondary-heading: $fs-800;
+        $fs-primary-heading: v.$fs-900;
+        $fs-secondary-heading: v.$fs-800;
     }
 }
 
