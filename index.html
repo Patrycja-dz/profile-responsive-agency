@@ -540,7 +540,7 @@
 
       <!-- light section -->
       <section>
-        <section>
+        <section class="map">
           <iframe
           class="map-section"
             height="720"
@@ -556,9 +556,19 @@
               href="https://www.openstreetmap.org/?mlat=54.3518&amp;mlon=18.6366#map=13/54.3518/18.6366"
             ></a
           ></small>
-          <form>
-            <h4>Get In Touch</h4>
+         <div class="container">
+          <form class="map-form padding-inline-700 padding-block-900">
+            <h4 class="fs-500 fw-semi-bold text-primary-400">Get In Touch</h4>
+            <input type="email" name="email" id="" placeholder="Your email" class="form-field padding-inline-500" aria-describedby="user-email-hint">
+            <select name="subject" id=""  class="form-field padding-inline-500">
+              <option value="">Subject</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <textarea name="" id="" cols="230" rows="5" placeholder="Message" class="form-field padding-inline-500"></textarea>
           </form>
+         </div>
         </section>
       </section>
     </main>

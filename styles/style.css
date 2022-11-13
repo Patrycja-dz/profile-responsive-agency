@@ -250,13 +250,40 @@ body {
   background-color: var(--accent-clr-500);
 }
 /* map */
-
-.map-section {
-  filter: grayscale(15%) sepia(69%) blur(1px) brightness(50%) hue-rotate(344deg) saturate(214%) contrast(163%);
-  -webkit-filter: grayscale(15%) sepia(69%) blur(1px) brightness(50%) hue-rotate(344deg) saturate(214%) contrast(163%);
-  -moz-filter: grayscale(15%) sepia(69%) blur(1px) brightness(50%) hue-rotate(344deg) saturate(214%) contrast(163%);
-  
+.map {
+  position: relative;
 }
+.map-section {
+  filter: grayscale(15%) sepia(69%) blur(1px) brightness(50%) hue-rotate(344deg)
+    saturate(214%) contrast(163%);
+  -webkit-filter: grayscale(15%) sepia(69%) blur(1px) brightness(50%)
+    hue-rotate(344deg) saturate(214%) contrast(163%);
+  -moz-filter: grayscale(15%) sepia(69%) blur(1px) brightness(50%)
+    hue-rotate(344deg) saturate(214%) contrast(163%);
+}
+.map-form {
+  position: absolute;
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  top: 20%;
+  gap: 1rem;
+  background-color: var(--clr-primary-100);
+  border-radius: var(--radius);
+}
+.form-label{
+  position:relative;
+  display:inline-block;
+}
+.form-field{
+  border: var(--border-100) solid var(--accent-clr-100);
+  padding-block:var(--size-200) ;
+  border-radius: var(--radius);
+  position: relative;
+}
+/* .form-field:nth-of-type option(2){
+  background-color: #fff;
+} */
 @media (min-width: 30em) {
   .slider > * {
     width: 50%;
