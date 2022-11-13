@@ -4,7 +4,6 @@ const slider = new A11YSlider(document.querySelector(".slider"), {
   dots: true,
   centerMode: true,
   arrows: false,
-  infinite: true,
   responsive: {
     576: {
       slidesToShow: 2,
