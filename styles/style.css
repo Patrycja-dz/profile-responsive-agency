@@ -249,6 +249,42 @@ body {
 .a11y-slider-dots li button.active {
   background-color: var(--accent-clr-500);
 }
+.a11y-slider-prev{
+  color: transparent;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: transparent;
+  border: var(--border-100) solid var(--accent-clr-400) ;
+  position: absolute;
+  right: var(--size-300);
+  top: -100px;
+}
+
+.a11y-slider-next{
+  color: transparent;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: transparent;
+  border: var(--border-100) solid var(--accent-clr-400) ;
+  position: absolute;
+  right: var(--size-900);
+  top: -100px;
+}
+.a11y-slider-prev:before{
+  content:url('/assets/arrow-right-solid.svg') ;
+  position: absolute;
+  top: 10px;
+  left: 18px;
+}
+
+.a11y-slider-next:before{
+  content:url('/assets/arrow-left-solid.svg') ;
+  position: absolute;
+  top: 10px;
+  right: 18px;
+}
 /* map */
 .map {
   position: relative;
