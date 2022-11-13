@@ -228,14 +228,12 @@ body {
   gap: var(--size-200);
   margin: 0 0 2em;
   padding: 0;
-
 }
 .a11y-slider-dots li {
   display: block;
   width: 12px;
   height: 12px;
   padding: 0;
- 
 }
 
 .a11y-slider-dots li button {
@@ -248,10 +246,17 @@ body {
   height: 100%;
   border-radius: 100%;
 }
-.a11y-slider-dots li button.active{
+.a11y-slider-dots li button.active {
   background-color: var(--accent-clr-500);
 }
+/* map */
 
+.map-section {
+  filter: grayscale(15%) sepia(69%) blur(1px) brightness(50%) hue-rotate(344deg) saturate(214%) contrast(163%);
+  -webkit-filter: grayscale(15%) sepia(69%) blur(1px) brightness(50%) hue-rotate(344deg) saturate(214%) contrast(163%);
+  -moz-filter: grayscale(15%) sepia(69%) blur(1px) brightness(50%) hue-rotate(344deg) saturate(214%) contrast(163%);
+  
+}
 @media (min-width: 30em) {
   .slider > * {
     width: 50%;
