@@ -15,7 +15,7 @@ body {
 .container {
     max-width: v.$max-width;
     padding: v.$size-400;
-    // width: (min(v.$max-width), 100% - v.$size-400) * 2; error here
+    // width: (min(v.$max-width), 100% - v.$size-400) * 2; error here <-- tutaj wywala błąd ponieważ masz przecinek, podejrzewam że miał być plus albo minus
     margin-inline: auto;
 }
 
