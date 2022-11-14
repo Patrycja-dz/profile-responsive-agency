@@ -1,4 +1,3 @@
-
 @use 'reset.scss' as r;
 @use 'variables.scss' as v;
 @use 'basic-classes.scss' as b;
@@ -9,13 +8,14 @@ body {
     font-size: v.$fs-body;
     font-family: v.$ff-family-primary;
 }
+
 //utilities 
 
 //container
 .container {
     max-width: v.$max-width;
     padding: v.$size-400;
-    // width: (min(v.$max-width), 100% - v.$size-400) * 2; error here
+    width: calc(min(v.$max-width, calc(100% - v.$size-400)) * 2);
     margin-inline: auto;
 }
 
@@ -67,9 +67,11 @@ body {
     background-color: v.$accent-clr-100;
     margin-top: v.$fs-600;
 }
+
 .check-list li::before {
     content: url("/assets/check-mark.svg");
-  }
+}
+
 //4 image gallery onblue background
 .photo-grid {
     @include m.grid-basic-settings;
@@ -80,36 +82,36 @@ body {
 .portfolio-card:nth-of-type(1) {
     background-image: url("assets/sofa.svg");
     background-repeat: no-repeat;
-  
-  }
-  
-  .portfolio-card:nth-of-type(2) {
+
+}
+
+.portfolio-card:nth-of-type(2) {
     background-image: url("assets/key-board.svg");
     background-repeat: no-repeat;
-  
-  }
-  
-  .portfolio-card:nth-of-type(3) {
+
+}
+
+.portfolio-card:nth-of-type(3) {
     background-image: url("assets/work-media.svg");
-  
-  }
-  
-  .portfolio-card:nth-of-type(4) {
+
+}
+
+.portfolio-card:nth-of-type(4) {
     background-image: url("assets/dddone.svg");
     background-repeat: no-repeat;
-  
-  }
-  
-  .portfolio-card-title {
+
+}
+
+.portfolio-card-title {
     height: 38px;
     max-width: 116px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 19px;
-  }
+}
 
-  
+
 //media queries 
 
 @media (min-width: 50em) {
