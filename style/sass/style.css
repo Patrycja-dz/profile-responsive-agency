@@ -214,6 +214,7 @@ body {
 .container {
   max-width: 1170px;
   padding: 1rem;
+  width: calc(min(1170px, 100% - 1rem) * 2);
   margin-inline: auto;
 }
 
