@@ -1,11 +1,11 @@
-@use 'variables.scss';
+@use 'variables.scss' as v;
 
 @mixin primary-btn {
-    border-radius: $radius;
-    border: $border-none;
-    padding: $button-size;
-    font-weight: $fw-super-bold;
-    font-size: $fs-button;
+    border-radius: v.$radius;
+    border: v.$border-none;
+    padding: v.$button-size;
+    font-weight: v.$fw-super-bold;
+    font-size: v.$fs-button;
     cursor: pointer;
 }
 
