@@ -206,6 +206,10 @@ svg {
   padding-inline: 1rem;
 }
 
+.single-padding-700 {
+  padding-top: 3rem;
+}
+
 body {
   font-size: 1rem;
   font-family: "Epilogue", sans-serif;
