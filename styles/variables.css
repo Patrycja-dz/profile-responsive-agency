@@ -13,6 +13,7 @@
 --accent-clr-300: rgb(255, 255, 255, 0.64);
 --accent-clr-400: rgb(255, 255, 255, 0.3);
 --accent-clr-100: rgb(243, 209, 191, 1);
+--accent-clr-200: rgb(225, 180, 155);
 --ff-family-primary: "Epilogue", sans-serif;
 --ff-body: var(--ff-family-primary);
 --ff-heading: var(--ff-family-primary);
