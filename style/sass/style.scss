@@ -21,7 +21,7 @@ body {
 
 .container-flex {
     display: flex;
-    gap: v.$size-700;
+    gap: v.$size-400;
 
 }
 
@@ -67,12 +67,13 @@ body {
 
 .flow {
     display: flex;
+
     justify-content: flex-end;
-    padding: v.$size-200;
+    align-items: flex-start;
+    padding: v.$size-400;
 }
-.numbered-list{
-    padding-right: 1rem;
-}
+
+
 //hero section 
 
 .hero-quote-idea {
@@ -111,7 +112,7 @@ body {
 
 .divider-900 {
     // background-color: v.$accent-color-900;
-    background-color:  rgba(213, 174, 133, 0.57);
+    background-color: rgba(213, 174, 133, 0.57);
     height: v.$border-100;
     width: 100%;
     margin-top: v.$fs-600;
@@ -144,19 +145,123 @@ body {
     grid-template-columns: repeat(3, 2fr);
     // place-items: center;
     border: 1px solid rgba(213, 174, 133, 0.57);
-    & div{
-     padding-block: 3rem;
+
+    & .odd-columns-child {
+        padding-block: 3rem;
         padding-left: 2rem;
     }
-    & div:nth-child(2) {
+
+    & .odd-columns-child:nth-child(2) {
         border-left: 1px solid rgba(213, 174, 133, 0.57);
         border-right: 1px solid rgba(213, 174, 133, 0.57);
-    // padding-right: 10rem;
+
     }
+
+}
+
+.odd-colummns-features {
+    @include m.grid-basic-settings;
+
+    gap: 0;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+
+    & div:nth-child(1) {
+        padding-right: 1rem;
+
+    }
+
+    & div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 5rem;
+        height: 336px;
+    }
+
+    & div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        top: 10%;
+        height: 272px;
+        border: 1px solid rgba(213, 174, 133, 0.57);
+
+        &>h4 {
+            margin-top: 40px
+        }
+    }
+}
+
+.check-list {
+    @include m.flex-column;
+    justify-content: flex-start;
+
 }
 
 .check-list li::before {
     content: url("/assets/check-mark.svg");
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+
+    position: relative;
+    top: 10px;
+}
+
+.video-controlls {
+    position: relative;
+
+    &:before {
+        content: url('/assets/play-arrow.svg');
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 24.5%;
+        transform: translate(-50%, -50%);
+        filter: grayscale(100%) contrast(100%);
+        opacity: 1;
+
+    }
+
+    &:after {
+        content: '';
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: 25%;
+        border: 3px solid v.$accent-clr-100;
+        position: absolute;
+        border-radius: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+
+
+}
+
+.video-length {
+
+    &:after {
+        content: '1:45';
+        position: absolute;
+        height: 20px;
+        width: 40px;
+        color: black;
+        top: 73%;
+        left: 5%;
+        background: #ddd;
+        text-align: center;
+        border: v.$radius;
+        opacity: .5;
+    }
+}
+
+.service-idea {
+    display: flex
 }
 
 //4 image gallery onblue background
