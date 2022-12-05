@@ -748,6 +748,40 @@ body {
   top: 3px;
 }
 
+.FAQ {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.FAQ__questions {
+  border-radius: 6px;
+  border: 1px solid rgba(213, 174, 133, 0.57);
+}
+.FAQ__questions div {
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  border-top: 1px solid rgba(213, 174, 133, 0.57);
+  position: relative;
+}
+.FAQ__questions div:first-of-type {
+  background-color: rgb(253, 240, 233);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.FAQ__title::after {
+  content: url("/assets/up.svg");
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  rotate: 180deg;
+}
+.FAQ__title--first::after {
+  rotate: 0deg;
+  right: 0px;
+  top: 25px;
+}
+
 .map {
   position: relative;
 }

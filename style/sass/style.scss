@@ -598,14 +598,17 @@ body {
         border-top-left-radius: v.$radius;
         border-top-right-radius: v.$radius;
     }
-    &__plan:last-of-type{
+
+    &__plan:last-of-type {
         border-top-right-radius: v.$radius;
         border-bottom-right-radius: v.$radius;
     }
-    &__list{
+
+    &__list {
         list-style: none;
     }
-    &__list li::before{
+
+    &__list li::before {
         content: url("/assets/checkbox.svg");
         padding-right: 1rem;
         padding-bottom: 1rem;
@@ -614,6 +617,51 @@ body {
     }
 }
 
+.FAQ {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__questions {
+        border-radius: v.$radius;
+        border: 1px solid rgba(213, 174, 133, 0.57);
+    }
+
+    &__questions div {
+
+        padding-inline: v.$size-600;
+        padding-block: v.$size-600;
+        border-top: 1px solid rgba(213, 174, 133, 0.57);
+        ;
+        position: relative;
+
+    }
+
+    &__questions div:first-of-type {
+        background-color: v.$clr-primary-100;
+        border-top-left-radius: v.$radius;
+        border-top-right-radius: v.$radius;
+    }
+
+    &__title::after {
+        content: url("/assets/up.svg");
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+        rotate: (180deg);
+    }
+
+    &__title--first::after {
+        rotate: (0deg);
+        right: 0px;
+        top: 25px;
+    }
+
+
+
+
+}
 
 .map {
     position: relative;
