@@ -218,6 +218,20 @@ svg {
   padding-top: 5rem;
 }
 
+.single-margin-block-200 {
+  margin-block: 4rem;
+}
+
+.single-margin-block-100 {
+  margin-block: 2rem;
+}
+
+.basic-flex-settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   font-size: 1rem;
   font-family: "Epilogue", sans-serif;
@@ -699,6 +713,39 @@ body {
 }
 .testimonial-user img {
   margin-right: 1rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.pricing-grid__plan {
+  border: 1px solid rgba(213, 174, 133, 0.57);
+  height: 512px;
+}
+.pricing-grid__plan:first-of-type {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.pricing-grid__plan:nth-of-type(2) {
+  height: 560px;
+  margin-top: -48px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.pricing-grid__plan:last-of-type {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.pricing-grid__list {
+  list-style: none;
+}
+.pricing-grid__list li::before {
+  content: url("/assets/checkbox.svg");
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  top: 3px;
 }
 
 .map {

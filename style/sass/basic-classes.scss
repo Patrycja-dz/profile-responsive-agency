@@ -1,5 +1,5 @@
-@use 'variables.scss'as v;
-
+@use 'variables.scss' as v;
+@use 'mixins.scss' as m;
 .text-primary-400 {
   color: v.$clr-neutral-500;
 }
@@ -146,4 +146,14 @@
 }
 .single-padding-900 {
   padding-top: v.$size-900;
+}
+.single-margin-block-200{
+  margin-block: v.$size-800;
+}
+
+.single-margin-block-100{
+  margin-block: v.$size-600;
+}
+.basic-flex-settings {
+ @include m.basic-flex-settings;
 }

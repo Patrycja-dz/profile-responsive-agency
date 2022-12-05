@@ -67,7 +67,6 @@ body {
 
 .flow {
     display: flex;
-
     justify-content: flex-end;
     align-items: flex-start;
     padding: v.$size-400;
@@ -576,6 +575,45 @@ body {
         margin-right: 1rem;
     }
 }
+
+
+// pricing grid
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    &__plan {
+        border: 1px solid rgba(213, 174, 133, 0.57);
+        height: 512px;
+    }
+
+    &__plan:first-of-type {
+        border-top-left-radius: v.$radius;
+        border-bottom-left-radius: v.$radius;
+    }
+
+    &__plan:nth-of-type(2) {
+        height: 560px;
+        margin-top: -48px;
+        border-top-left-radius: v.$radius;
+        border-top-right-radius: v.$radius;
+    }
+    &__plan:last-of-type{
+        border-top-right-radius: v.$radius;
+        border-bottom-right-radius: v.$radius;
+    }
+    &__list{
+        list-style: none;
+    }
+    &__list li::before{
+        content: url("/assets/checkbox.svg");
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        position: relative;
+        top: 3px;
+    }
+}
+
 
 .map {
     position: relative;
