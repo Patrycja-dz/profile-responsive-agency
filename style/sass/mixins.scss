@@ -8,7 +8,11 @@
     font-size: v.$fs-button;
     cursor: pointer;
 }
-
+@mixin horizontal-desktop-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 @mixin basic-flex-settings {
     display: flex;
     justify-content: center;

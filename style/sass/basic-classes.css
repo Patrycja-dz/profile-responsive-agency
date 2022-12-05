@@ -69,7 +69,7 @@
 
 .fs-primary-heading {
   font-size: 3.5rem;
-  line-height: 1.15;
+  line-height: 1.35;
 }
 
 .fs-secondary-heading {
@@ -135,4 +135,16 @@
 
 .padding-inline-400 {
   padding-inline: 1rem;
+}
+
+.padding-block-300 {
+  padding-block: 0.75rem;
+}
+
+.single-padding-700 {
+  padding-top: 3rem;
+}
+
+.single-padding-900 {
+  padding-top: 5rem;
 }/*# sourceMappingURL=basic-classes.css.map */
