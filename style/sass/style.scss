@@ -777,9 +777,10 @@ body {
 .copyright-wrapper {
   display: flex;
   justify-content: space-between;
-& .copyright-terms{
-  display: flex;
 }
+.copyright-terms{
+  display: flex;
+
 }
 //media queries
 @media (min-width: 30em) {
