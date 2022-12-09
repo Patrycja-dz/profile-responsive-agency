@@ -720,12 +720,96 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 .pricing-grid__plan {
-  border: 1px solid red;
+  border: 1px solid rgba(213, 174, 133, 0.57);
   height: 512px;
+}
+.pricing-grid__plan:first-of-type {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 .pricing-grid__plan:nth-of-type(2) {
   height: 560px;
   margin-top: -48px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.pricing-grid__plan:last-of-type {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.pricing-grid__list {
+  list-style: none;
+}
+.pricing-grid__list li::before {
+  content: url("/assets/checkbox.svg");
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+  top: 3px;
+}
+
+.FAQ {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.FAQ__questions {
+  border-radius: 6px;
+  border: 1px solid rgba(213, 174, 133, 0.57);
+}
+.FAQ__questions div {
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  border-top: 1px solid rgba(213, 174, 133, 0.57);
+  position: relative;
+}
+.FAQ__questions div:first-of-type {
+  background-color: rgb(253, 240, 233);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.FAQ__title::after {
+  content: url("/assets/up.svg");
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  rotate: 180deg;
+}
+.FAQ__title--first::after {
+  rotate: 0deg;
+  right: 0px;
+  top: 25px;
+}
+
+.blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-articles {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.blog-articles__singleArtcile {
+  position: relative;
+}
+.blog-articles__singleArticle::before {
+  content: url("/assets/stories-article.svg");
+}
+.blog-articles__singleArticle:nth-of-type(2)::before {
+  content: url("/assets/design-article.svg");
+}
+.blog-articles__singleArticle:nth-of-type(3)::before {
+  content: url("/assets/marketing-article.svg");
+}
+
+.newsletter input {
+  padding-block: 0.65rem;
+  margin-right: 1.3rem;
+  border: 1px solid rgba(213, 174, 133, 0.57);
 }
 
 .map {
@@ -764,6 +848,11 @@ body {
 /* .form-field:nth-of-type option(2){
     background-color: #fff;
   } */
+.contact-date {
+  display: flex;
+  border: 1px solid red;
+}
+
 @media (min-width: 30em) {
   .slider > * {
     width: 50%;
