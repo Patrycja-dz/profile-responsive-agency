@@ -149,12 +149,28 @@
   padding-top: 5rem;
 }
 
+.single-padding-bottom-600 {
+  padding-bottom: 2rem;
+}
+
 .single-margin-block-200 {
   margin-block: 4rem;
 }
 
 .single-margin-block-100 {
   margin-block: 2rem;
+}
+
+.single-margin-top-600 {
+  margin-top: 2rem;
+}
+
+.single-margin-top-1000 {
+  margin-top: 6em;
+}
+
+.single-margin-right-200 {
+  margin-right: 2em;
 }
 
 .basic-flex-settings {

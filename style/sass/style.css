@@ -218,12 +218,28 @@ svg {
   padding-top: 5rem;
 }
 
+.single-padding-bottom-600 {
+  padding-bottom: 2rem;
+}
+
 .single-margin-block-200 {
   margin-block: 4rem;
 }
 
 .single-margin-block-100 {
   margin-block: 2rem;
+}
+
+.single-margin-top-600 {
+  margin-top: 2rem;
+}
+
+.single-margin-top-1000 {
+  margin-top: 6em;
+}
+
+.single-margin-right-200 {
+  margin-right: 2em;
 }
 
 .basic-flex-settings {
@@ -350,6 +366,14 @@ body {
   margin-right: 1.5rem;
 }
 
+.centered-text {
+  text-align: center;
+}
+
+.lucid-text {
+  opacity: 0.45;
+}
+
 .decoration-quote::before {
   content: url("/assets/quote.svg");
   position: absolute;
@@ -465,6 +489,9 @@ body {
 
 .service-idea {
   display: flex;
+}
+.service-idea p:nth-of-type(1) {
+  margin-top: 50px;
 }
 
 .portfolio-card-wrapper {
@@ -631,7 +658,7 @@ body {
   background-color: transparent;
   width: 100%;
   height: 100%;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .a11y-slider-dots li button.active {
@@ -850,9 +877,11 @@ body {
   position: relative;
 }
 
-/* .form-field:nth-of-type option(2){
-    background-color: #fff;
-  } */
+.form-button__location {
+  width: 50%;
+  align-self: flex-end;
+}
+
 .contact-column {
   margin-left: 2rem;
 }
@@ -916,6 +945,14 @@ body {
 }
 .page-footer .page-footer__service-item {
   margin-left: 2rem;
+}
+
+.copyright-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.copyright-wrapper .copyright-terms {
+  display: flex;
 }
 
 @media (min-width: 30em) {

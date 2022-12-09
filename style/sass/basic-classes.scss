@@ -147,12 +147,24 @@
 .single-padding-900 {
   padding-top: v.$size-900;
 }
+.single-padding-bottom-600{
+  padding-bottom: v.$size-600;
+}
 .single-margin-block-200{
   margin-block: v.$size-800;
 }
 
 .single-margin-block-100{
   margin-block: v.$size-600;
+}
+.single-margin-top-600{
+  margin-top: v.$size-600
+}
+.single-margin-top-1000{
+  margin-top: 6em
+}
+.single-margin-right-200{
+  margin-right: 2em
 }
 .basic-flex-settings {
  @include m.basic-flex-settings;
