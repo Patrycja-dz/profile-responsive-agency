@@ -1,5 +1,5 @@
-@use 'variables.scss' as v;
-@use 'mixins.scss' as m;
+@use "variables.scss" as v;
+@use "mixins.scss" as m;
 .text-primary-400 {
   color: v.$clr-neutral-500;
 }
@@ -48,10 +48,6 @@
   background-color: v.$accent-clr-450;
 }
 
-.bg-neutral-200 {
-  background-color: v.$accent-clr-100;
-}
-
 .fw-super-bold {
   font-weight: v.$fw-super-bold;
 }
@@ -71,12 +67,10 @@
 .fs-primary-heading {
   font-size: v.$fs-primary-heading;
   line-height: 1.35;
-
 }
 
 .fs-secondary-heading {
   font-size: v.$fs-secondary-heading;
-  line-height: 1.1;
 }
 
 .fs-button {
@@ -134,12 +128,17 @@
 .padding-block-400 {
   padding-block: v.$size-400;
 }
-
+.padding-block-300 {
+  padding-block: v.$size-300;
+}
+.padding-block-200{
+  padding-block: v.$size-200;
+}
 .padding-inline-400 {
   padding-inline: v.$size-400;
 }
-.padding-block-300{
-  padding-block: v.$size-300;
+.single-padding-600 {
+  padding-top: v.$size-600;
 }
 .single-padding-700 {
   padding-top: v.$size-700;
@@ -147,25 +146,68 @@
 .single-padding-900 {
   padding-top: v.$size-900;
 }
-.single-padding-bottom-600{
+.single-padding-bottom-600 {
   padding-bottom: v.$size-600;
 }
-.single-margin-block-200{
+.single-margin-block-200 {
   margin-block: v.$size-800;
 }
 
-.single-margin-block-100{
+.single-margin-block-100 {
   margin-block: v.$size-600;
 }
-.single-margin-top-600{
-  margin-top: v.$size-600
+.single-margin-top-600 {
+  margin-top: v.$size-600;
 }
-.single-margin-top-1000{
-  margin-top: 6em
+.single-margin-top-1000 {
+  margin-top: 6em;
 }
-.single-margin-right-200{
-  margin-right: 2em
+.single-margin-right-200 {
+  margin-right: 2em;
 }
 .basic-flex-settings {
- @include m.basic-flex-settings;
+  @include m.basic-flex-settings;
+}
+
+.letter-spacing-30 {
+  letter-spacing: v.$letter-spacing-30;
+}
+.zindex-100 {
+  z-index: v.$z-index-1000;
+}
+
+.zindex-50 {
+  z-index: v.$z-index-500;
+}
+.zindex-0 {
+  z-index: v.$z-index-0;
+}
+.line-height-xs {
+  line-height: v.$line-height-xs;
+}
+.line-height-s {
+  line-height: v.$line-height-s;
+}
+.line-height-z {
+  line-height: v.$line-height-z;
+}
+.line-height-m {
+  line-height: v.$line-height-m;
+}
+.line-height-o {
+  line-height: v.$line-height-o;
+}
+
+.paragraph-length {
+  max-width: 47ch;
+}
+
+.btn-box-shadow {
+  @include m.main-box-shadow;
+}
+.heading-length{
+  max-width: 22ch;
+}
+.founder-words{
+  width: 23ch
 }

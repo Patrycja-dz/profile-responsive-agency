@@ -47,10 +47,6 @@
   background-color: rgb(239, 109, 87);
 }
 
-.bg-neutral-200 {
-  background-color: rgb(243, 209, 191);
-}
-
 .fw-super-bold {
   font-weight: 900;
 }
@@ -74,7 +70,6 @@
 
 .fs-secondary-heading {
   font-size: 4rem;
-  line-height: 1.1;
 }
 
 .fs-button {
@@ -133,12 +128,20 @@
   padding-block: 1rem;
 }
 
+.padding-block-300 {
+  padding-block: 0.75rem;
+}
+
+.padding-block-200 {
+  padding-block: 0.5rem;
+}
+
 .padding-inline-400 {
   padding-inline: 1rem;
 }
 
-.padding-block-300 {
-  padding-block: 0.75rem;
+.single-padding-600 {
+  padding-top: 2rem;
 }
 
 .single-padding-700 {
@@ -177,4 +180,56 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.letter-spacing-30 {
+  letter-spacing: 3px;
+}
+
+.zindex-100 {
+  z-index: 1000;
+}
+
+.zindex-50 {
+  z-index: 500;
+}
+
+.zindex-0 {
+  z-index: 0;
+}
+
+.line-height-xs {
+  line-height: 14.35px;
+}
+
+.line-height-s {
+  line-height: 32px;
+}
+
+.line-height-z {
+  line-height: 24px;
+}
+
+.line-height-m {
+  line-height: 48px;
+}
+
+.line-height-o {
+  line-height: 64px;
+}
+
+.paragraph-length {
+  max-width: 47ch;
+}
+
+.btn-box-shadow {
+  box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+}
+
+.heading-length {
+  max-width: 22ch;
+}
+
+.founder-words {
+  width: 23ch;
 }/*# sourceMappingURL=basic-classes.css.map */
