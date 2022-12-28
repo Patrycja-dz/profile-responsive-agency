@@ -373,7 +373,6 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 5rem;
-  border: 2px solid yellow;
 }
 
 .hero-quote-idea {
