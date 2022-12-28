@@ -71,11 +71,12 @@ body {
 
 //hero section
 .hero-container {
-  display: flex;
-  justify-content: space-between;
   gap: v.$size-900;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 
 }
+
 .hero-quote-idea {
   display: flex;
   padding-top: 7.25em;
@@ -858,4 +859,22 @@ resize: none;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }
+}
+
+
+//containers
+
+// @container  (max-width: 45em){
+//   .hero-container{
+//   flex-direction:column;
+//   border:2px solid orange;
+//   }
+// }
+
+@media (max-width:50em){
+
+.hero-container{
+  grid-template-columns: 1fr;
+  width: auto;
+}
 }

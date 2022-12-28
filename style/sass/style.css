@@ -370,9 +370,13 @@ body {
 }
 
 .hero-container {
-  display: flex;
-  justify-content: space-between;
+  container-type: inline-size;
   gap: 5rem;
+<<<<<<< HEAD
+=======
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+>>>>>>> 8c7383f (comment @container and try @media)
 }
 
 .hero-quote-idea {
@@ -1078,5 +1082,14 @@ textarea {
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+  }
+}
+@media (max-width: 50em) {
+  body {
+    display: none;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    width: auto;
   }
 }/*# sourceMappingURL=style.css.map */
