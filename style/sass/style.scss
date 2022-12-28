@@ -192,6 +192,7 @@ body {
   & .odd-columns-child {
     padding-block: 1.5rem;
     padding-left: 2rem;
+  
   }
 
   & .odd-columns-child:nth-child(2) {
@@ -617,6 +618,8 @@ body {
     margin-top: -48px;
     border-top-left-radius: v.$radius;
     border-top-right-radius: v.$radius;
+
+
   }
 
   &__plan:last-of-type {
@@ -654,7 +657,7 @@ body {
   }
 
   &__questions div:first-of-type {
-    background-color: v.$clr-primary-100;
+    background-color: v.$clr-neutral-100;
     border-top-left-radius: v.$radius;
     border-top-right-radius: v.$radius;
   }
@@ -745,11 +748,19 @@ body {
   border: v.$border-100 solid v.$accent-clr-100;
   padding-block: v.$size-200;
   border-radius: v.$radius;
+  padding-left: v.$size-200;
   position: relative;
+  &--email{
+    width: 45ch;
+    height: 43px;
+  }
+ 
+}
+textarea{
+resize: none;
 }
 
 .form-button__location {
-  width: v.$radius-1000;
   align-self: flex-end;
 }
 .contact-column {
@@ -780,7 +791,6 @@ body {
   display: grid;
   grid-template-areas: "agency menu service service socials";
   margin-top: 5em;
-
   grid-template-rows: auto;
 
   &__agency {
@@ -790,6 +800,7 @@ body {
   &__menu {
     grid-area: menu;
     display: flex;
+    place-items: center;
     justify-content: center;
     flex-direction: column;
   }
@@ -810,16 +821,11 @@ body {
     }
   }
 
-  .page-footer__menu-list {
+  .page-footer__menu-list, .page-footer__service-list {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin-left: 1.3rem;
   }
 
-  .page-footer__service-list {
-    list-style: none;
-  }
+
 
   .page-footer__service-item {
     margin-left: 2rem;

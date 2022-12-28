@@ -275,6 +275,10 @@ svg {
   line-height: 32px;
 }
 
+.line-height-z {
+  line-height: 24px;
+}
+
 .line-height-m {
   line-height: 48px;
 }
@@ -897,7 +901,7 @@ body {
   position: relative;
 }
 .FAQ__questions div:first-of-type {
-  background-color: rgb(253, 240, 233);
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
@@ -976,11 +980,19 @@ body {
   border: 1px solid rgb(243, 209, 191);
   padding-block: 0.5rem;
   border-radius: 6px;
+  padding-left: 0.5rem;
   position: relative;
+}
+.form-field--email {
+  width: 45ch;
+  height: 43px;
+}
+
+textarea {
+  resize: none;
 }
 
 .form-button__location {
-  width: 50%;
   align-self: flex-end;
 }
 
@@ -1020,6 +1032,7 @@ body {
 .page-footer__menu {
   grid-area: menu;
   display: flex;
+  place-items: center;
   justify-content: center;
   flex-direction: column;
 }
@@ -1036,13 +1049,7 @@ body {
 .page-footer__socials img {
   transform: translate(85%, 15%);
 }
-.page-footer .page-footer__menu-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  margin-left: 1.3rem;
-}
-.page-footer .page-footer__service-list {
+.page-footer .page-footer__menu-list, .page-footer .page-footer__service-list {
   list-style: none;
 }
 .page-footer .page-footer__service-item {
