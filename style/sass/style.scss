@@ -2,12 +2,7 @@
 @use "variables.scss" as v;
 @use "basic-classes.scss" as b;
 @use "mixins.scss" as m;
-// *{
-//   outline: 1px solid red;
 
-//   // overflow-x: hidden;
-//   // background-color: red;
-// }
 body {
   font-size: v.$fs-body;
   font-family: v.$ff-family-primary;

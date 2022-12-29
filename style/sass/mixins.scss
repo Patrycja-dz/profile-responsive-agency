@@ -31,8 +31,8 @@
     gap: 1rem;
 }
 @mixin main-box-shadow{
-    box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+    box-shadow: 0px 3px 9px v.$box-shadow-300;
 }
 @mixin features-box-shadow{
-    box-shadow: 0px 32px 64px rgba(57, 20, 0, 0.04)
+    box-shadow: 0px 32px 64px v.$box-shadow-325;
 }
