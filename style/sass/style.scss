@@ -66,27 +66,40 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: v.$size-400;
+  padding: v.$size-700;
 }
 
 //hero section
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  gap: v.$size-900;
 
+}
 .hero-quote-idea {
   display: flex;
-  padding-top: 9.5em;
+  padding-top: 7.25em;
 }
 
 .hero-quote {
   @include m.flex-column;
 }
 
+.hero-description {
+  max-width: 55ch;
+}
+.primary-heading-decoration {
+  position: relative;
+}
 //decorators
 .primary-heading-decoration::before {
   content: url("/assets/star-outlined.svg");
   opacity: 0.5;
   position: absolute;
-  left: 26.5%;
-  top: 28.5%;
+  left: 53%;
+  transform: translateX(-40%);
+  top: -36px;
+  z-index: -1000;
 }
 
 .decoration-neutral {
@@ -115,7 +128,7 @@ body {
 
 .rounded-rectangle {
   border-radius: v.$radius-700;
-  width: 15ch;
+  width: 11ch;
   text-align: center;
   padding: v.$size-200;
 }
@@ -130,24 +143,51 @@ body {
 .lucid-text {
   opacity: 0.45;
 }
+.decoration-quote
+{
+  position: relative;
+
+}
 .decoration-quote {
   &::before {
     content: url("/assets/quote.svg");
     position: absolute;
-    left: 80%;
-    // z-index: -1; do poprawy
-    opacity: 0.7;
+    right:  170px;
+    top: -50px;
+    z-index: v.$z-index--1;
+
+
   }
 }
-
+.numbered-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+ grid-row-gap:1rem;
+  &__child {
+    display: grid;
+    grid-template-columns: 100px 2fr;
+    & .number{
+      line-height: 80px;
+      font-size: v.$fs-900;
+      
+    }
+    & h4{
+      text-align: left;
+      color: v.$clr-neutral-500;
+      line-height: v.$line-height-m;
+    }
+  }
+}
 .odd-columns {
   @include m.grid-basic-settings;
   grid-template-columns: repeat(3, 2fr);
   border: 1px solid v.$accent-clr-200;
 
   & .odd-columns-child {
-    padding-block: 3rem;
+    padding-block: 1.5rem;
     padding-left: 2rem;
+  
   }
 
   & .odd-columns-child:nth-child(2) {
@@ -165,6 +205,7 @@ body {
 
   & div:nth-child(1) {
     padding-right: 1rem;
+
   }
 
   & div:nth-child(2) {
@@ -174,6 +215,9 @@ body {
     align-items: flex-start;
     margin-left: 5rem;
     height: 336px;
+    border: v.$border-100 solid #f3d1bf;
+    @include m.features-box-shadow;
+    border-radius: 6px 6px 0 6px;
   }
 
   & div:nth-child(3) {
@@ -183,7 +227,7 @@ body {
     align-items: flex-start;
     position: relative;
     top: 10%;
-    height: 272px;
+    height: 269px;
     border: 1px solid v.$accent-clr-200;
 
     & > h4 {
@@ -254,7 +298,9 @@ body {
     opacity: 0.5;
   }
 }
-
+.service-image{
+  width: 70%;
+}
 .service-idea {
   display: flex;
   & p:nth-of-type(1) {
@@ -322,6 +368,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   position: relative;
+  margin-top: 150px;
 }
 
 .banner-description {
@@ -357,13 +404,13 @@ body {
 .events-board {
   @include m.grid-basic-settings;
   grid-template-columns: repeat(3, 1fr);
-  gap: v.$size-500;
+  gap: v.$size-400;
 
   & .event-date {
     display: flex;
     border-radius: v.$radius;
     border: v.$border-100 solid v.$accent-clr-400;
-    padding-inline: v.$size-700;
+    padding-inline: v.$size-500;
     padding-block: v.$button-size;
 
     &.event-month {
@@ -566,6 +613,8 @@ body {
     margin-top: -48px;
     border-top-left-radius: v.$radius;
     border-top-right-radius: v.$radius;
+
+
   }
 
   &__plan:last-of-type {
@@ -603,7 +652,7 @@ body {
   }
 
   &__questions div:first-of-type {
-    background-color: v.$clr-primary-100;
+    background-color: v.$clr-neutral-100;
     border-top-left-radius: v.$radius;
     border-top-right-radius: v.$radius;
   }
@@ -694,11 +743,19 @@ body {
   border: v.$border-100 solid v.$accent-clr-100;
   padding-block: v.$size-200;
   border-radius: v.$radius;
+  padding-left: v.$size-200;
   position: relative;
+  &--email{
+    width: 45ch;
+    height: 43px;
+  }
+ 
+}
+textarea{
+resize: none;
 }
 
 .form-button__location {
-  width: v.$radius-1000;
   align-self: flex-end;
 }
 .contact-column {
@@ -729,7 +786,6 @@ body {
   display: grid;
   grid-template-areas: "agency menu service service socials";
   margin-top: 5em;
-
   grid-template-rows: auto;
 
   &__agency {
@@ -739,6 +795,7 @@ body {
   &__menu {
     grid-area: menu;
     display: flex;
+    place-items: center;
     justify-content: center;
     flex-direction: column;
   }
@@ -759,16 +816,11 @@ body {
     }
   }
 
-  .page-footer__menu-list {
+  .page-footer__menu-list, .page-footer__service-list {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin-left: 1.3rem;
   }
 
-  .page-footer__service-list {
-    list-style: none;
-  }
+
 
   .page-footer__service-item {
     margin-left: 2rem;
@@ -778,9 +830,8 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.copyright-terms{
+.copyright-terms {
   display: flex;
-
 }
 //media queries
 @media (min-width: 30em) {

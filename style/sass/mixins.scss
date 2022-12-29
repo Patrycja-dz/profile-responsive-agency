@@ -7,6 +7,7 @@
     font-weight: v.$fw-super-bold;
     font-size: v.$fs-button;
     cursor: pointer;
+    line-height: 14.35px;
 }
 @mixin horizontal-desktop-nav{
     display: flex;
@@ -28,4 +29,10 @@
 @mixin grid-basic-settings {
     display: grid;
     gap: 1rem;
+}
+@mixin main-box-shadow{
+    box-shadow: 0px 3px 9px v.$box-shadow-300;
+}
+@mixin features-box-shadow{
+    box-shadow: 0px 32px 64px v.$box-shadow-325;
 }
