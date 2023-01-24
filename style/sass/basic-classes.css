@@ -67,9 +67,22 @@
   font-size: 3.5rem;
   line-height: 1.35;
 }
+@media (max-width: 36em) {
+  .fs-primary-heading {
+    font-size: 4rem;
+    line-height: 64px;
+  }
+}
 
 .fs-secondary-heading {
   font-size: 4rem;
+}
+@media (max-width: 36em) {
+  .fs-secondary-heading {
+    font-size: 2.5rem;
+    line-height: 48px;
+    width: 18ch;
+  }
 }
 
 .fs-button {

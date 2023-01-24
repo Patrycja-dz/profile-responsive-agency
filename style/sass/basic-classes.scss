@@ -67,10 +67,19 @@
 .fs-primary-heading {
   font-size: v.$fs-primary-heading;
   line-height: 1.35;
+  @include m.xs{
+    font-size: v.$fs-secondary-heading ;
+    line-height: v.$line-height-o;
+  }
 }
 
 .fs-secondary-heading {
   font-size: v.$fs-secondary-heading;
+  @include m.xs{
+    font-size: v.$fs-600;
+    line-height: v.$line-height-m;
+    width:18ch
+  }
 }
 
 .fs-button {

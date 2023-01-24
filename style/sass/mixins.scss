@@ -1,38 +1,63 @@
-@use 'variables.scss' as v;
+@use "variables.scss" as v;
 
 @mixin primary-btn {
-    border-radius: v.$radius;
-    border: v.$border-none;
-    padding: v.$button-size;
-    font-weight: v.$fw-super-bold;
-    font-size: v.$fs-button;
-    cursor: pointer;
-    line-height: 14.35px;
+  border-radius: v.$radius;
+  border: v.$border-none;
+  padding: v.$button-size;
+  font-weight: v.$fw-super-bold;
+  font-size: v.$fs-button;
+  cursor: pointer;
+  line-height: 14.35px;
 }
-@mixin horizontal-desktop-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@mixin horizontal-desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @mixin basic-flex-settings {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 @mixin flex-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @mixin grid-basic-settings {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
-@mixin main-box-shadow{
-    box-shadow: 0px 3px 9px v.$box-shadow-300;
+@mixin main-box-shadow {
+  box-shadow: 0px 3px 9px v.$box-shadow-300;
 }
-@mixin features-box-shadow{
-    box-shadow: 0px 32px 64px v.$box-shadow-325;
+@mixin features-box-shadow {
+  box-shadow: 0px 32px 64px v.$box-shadow-325;
+}
+
+@mixin xs {
+  @media (max-width: 36em) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (min-width: calc(36em + 1px)) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: 48em) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: 62em) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: 75em) {
+    @content;
+  }
 }

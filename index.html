@@ -47,7 +47,7 @@
 
   <main class="bg-primary-100">
     <section class="bg-primary-900 padding-block-700">
-      <div class="container hero-container">
+      <div class="container hero-container hero-container-top">
         <div class="zindex-0">
           <h5 class="letter-spacing-30 text-accent-500 uppercased padding-block-500 fw-regular ">
             Modern Studio
@@ -60,11 +60,14 @@
             Agency provides a full service range including technical skills,
             design, business understanding.
           </p>
-          <button
-            class="primary-btn uppercased bg-accent-500 text-neutral-100 fw-super-bold fs-button padding-block-400 centered-text">
-            How we work
-          </button>
-          <span class="fw-regular text-neutral-100 padding-inline-500 centered-text">Contact us</span>
+          <div class="btn-wrapper">
+            <button
+              class="primary-btn uppercased bg-accent-500 text-neutral-100 fw-super-bold fs-button padding-block-400 centered-text">
+              How we work
+            </button>
+            <button class="fw-regular text-neutral-100 padding-inline-500 centered-text secondary-btn">Contact
+              us</button>
+          </div>
 
           <div class="hero-quote-idea">
             <img src="assets/hero-little-purple-circle.svg" alt="" />
@@ -78,16 +81,29 @@
         </div>
 
         <img src="assets/hero-image.svg" alt="hero image" />
+
+
       </div>
     </section>
 
     <section class="bg-primary-100">
-      <div class="container padding-block-700">
-        <img class="padding-block-400" src="assets/brands.svg" />
-        <div class="divider-900"></div>
+      <div class="container padding-block-700 brand-container">
+        <div>
+          <img src="assets/brand1.svg" alt="brand" />
+          <img src="assets/brand2.svg" alt="brand" />
+        </div>
+        <div>
+          <img src="assets/brand3.svg" alt="brand" />
+          <img src="assets/brand4.svg" alt="brand" />
+        </div>
+        <img src="assets/brand5.svg" alt="brand" />
+
+
+
       </div>
+      <div class="divider-900 "></div>
       <section class="clr-primary-100 padding-block-700">
-        <div class="container hero-container">
+        <div class="container hero-container expirienced-agency__section">
           <img src="/assets/design-agency-image.svg" alt="design agency image" />
           <div>
             <h5 class="text-accent-500 uppercased fw-regular single-padding-700 letter-spacing-30">
@@ -142,19 +158,19 @@
               </p>
             </div>
             <div class="single-padding-900  numbered-list ">
-              <div class="fs-primary-heading fw-semi-bold padding-inline-500 numbered-list__child" >
+              <div class="fs-primary-heading fw-semi-bold padding-inline-500 numbered-list__child">
                 <h1 class="text-priamry-400 fw-bold number">1</h1>
                 <h4 class="fs-400 fw-semi-bold padding-block-400 centered-text "> Full service range including</h4>
               </div>
-              <div class="text-priamry-400 fs-primary-heading fw-semi-bold padding-inline-500 numbered-list__child"  >
+              <div class="text-priamry-400 fs-primary-heading fw-semi-bold padding-inline-500 numbered-list__child">
                 <h1 class="text-priamry-400 fw-bold number">2</h1>
-                <h4 class="fs-400 fw-semi-bold padding-block-400 centered-text" > Technical skills, design, business</h4>
+                <h4 class="fs-400 fw-semi-bold padding-block-400 centered-text"> Technical skills, design, business</h4>
               </div>
-              <div class="text-priamry-400 fs-primary-heading fw-semi-bold   padding-inline-500 numbered-list__child" >
+              <div class="text-priamry-400 fs-primary-heading fw-semi-bold   padding-inline-500 numbered-list__child">
                 <h1 class="text-priamry-400 fw-bold number">3</h1>
                 <h4 class="fs-400 fw-semi-bold padding-block-400 centered-text"> Themselves in the merchant's</h4>
               </div>
-  
+
             </div>
           </div>
           <div class="divider-900"></div>
@@ -176,7 +192,7 @@
             </div>
           </div>
 
-          <div class="hero-container padding-block-900">
+          <div class="hero-container padding-block-900 check-list__container">
             <div>
               <h5 class="text-accent-500 uppercased fw-regular letter-spacing-30 line-height-s">
                 Features
@@ -188,7 +204,7 @@
                 Service range including technical skills, design, business
                 understanding.
               </p>
-              <ul role="list" class="check-list padding-block-400" >
+              <ul role="list" class="check-list padding-block-400">
                 <li>Range including technical skills</li>
                 <li class="padding-block-300">Business understanding</li>
                 <li>Partner on the long run</li>
@@ -223,8 +239,8 @@
             </div>
           </div>
 
-          <div class="hero-container padding-block-900">
-            <img src="assets/digital-products.svg" alt=""  class="service-image"/>
+          <div class="hero-container padding-block-900 service-section">
+            <img src="assets/digital-products.svg" alt="" class="service-image" />
             <div class="padding-inline-400">
               <h5 class="text-accent-500 fw-regular uppercased letter-spacing-30 line-height-s">Service</h5>
               <h2 class="fw-bold ext-primary-400 fs-secondary-heading padding-block-500 heading-length line-height-o">
@@ -247,7 +263,8 @@
                 </div>
               </div>
               <div class="padding-block-500">
-                <button class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow text-priamry-400">
+                <button
+                  class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow text-priamry-400">
                   Explore
                 </button>
               </div>
@@ -261,7 +278,7 @@
           </h3>
           <div class="odd-columns decoration-neutral">
             <div class="odd-columns-child">
-              <img src="assets/design-icon.svg" alt="" >
+              <img src="assets/design-icon.svg" alt="">
               <h4 class="fs-500 text-primary-400 fw-semi-bold line-height-s padding-block-400">Design</h4>
               <p class="fw-regular text-color-350 line-height-s">
                 Agency provides a full service range including technical
@@ -281,7 +298,7 @@
               <p class="text-priamry-400 fw-regular padding-block-400 line-height-s">Discover More</p>
             </div>
             <div class="odd-columns-child">
-              <img src="assets/marketing-icon.svg" alt=""/>
+              <img src="assets/marketing-icon.svg" alt="" />
               <h4 class="fs-500 text-primary-400 fw-semi-bold line-height-s padding-block-400">Marketing</h4>
               <p class="fw-regular text-color-350 line-height-s">
                 Technical skills, design, business understanding, ability.
@@ -309,6 +326,16 @@
         <li class="fw-regular fs-350 text-primary-300 line-height-s">Illustration</li>
         <li class="fw-regular fs-350 text-primary-300 line-height-s">Motion</li>
       </ul>
+
+     <div class="mobile-menu">
+      <select class="">
+        <option value="show-all">Show Al</option>
+        <option value="design">Design</option>
+        <option value="branding">Branding</option>
+        <option value="ilustration">Illustration</option>
+        <option value="motion">Motion</option>
+      </select>
+     </div>
       <section class="portfolio-card-wrapper container padding-block-900">
         <div class="portfolio-card text-neutral-100 container-flex flow">
           <p class="portfolio-card-title text-priamry-400 bg-neutral-100 text-primary-400 rounded-rectangle">
@@ -334,7 +361,8 @@
           </p>
           <h3 class="fs-600 fw-bold line-height-m">DDDone</h3>
         </div>
-        <button class="primary-btn decoration-neutral text-neutral-100 fs-button fw-super-bold centered uppercased  line-height-xs single-margin-top-600">
+        <button
+          class="primary-btn decoration-neutral text-neutral-100 fs-button fw-super-bold centered uppercased  line-height-xs single-margin-top-600">
           Explore More
         </button>
       </section>
@@ -352,9 +380,10 @@
               contact us
             </button>
           </div>
-          <img src="/assets/analysing-graph.svg" alt="analysing graph" />
+          <img src="/assets/analysing-graph.svg" alt="analysing graph" class="graph" />
           <div class="banner-consultant-expert">
-            <img src="/assets/consultant.svg" />
+            <img src="/assets/consultant.svg" class="mobile-hidden"/>
+            <img src="/assets/mobile-consultant.svg" class="desktop-hidden"/>
           </div>
         </div>
       </div>
@@ -364,7 +393,7 @@
             Events
           </h5>
           <h2 class="text-neutral-100 fs-secondary-heading fw-bold padding-block-400 centered-text line-height-o">
-            Explore Future<br/> Conferences
+            Explore Future<br /> Conferences
           </h2>
           <div class="events-board padding-block-500">
             <div class="event-date">
@@ -372,7 +401,8 @@
                 3
               </div>
               <div class="event-month">
-                <h4 class="event-number-day fs-500 fw-semi-bold text-neutral-100 padding-block-400 padding-inline-400 line-height-s">
+                <h4
+                  class="event-number-day fs-500 fw-semi-bold text-neutral-100 padding-block-400 padding-inline-400 line-height-s">
                   November <br />2021
                 </h4>
                 <div class="event-duration fw-regular text-neutral-100 line-height-s">
@@ -385,7 +415,7 @@
                     Digital agency is a business you hire to outsource your
                     digital.
                   </p>
-                  <p >Explore Now</p>
+                  <p>Explore Now</p>
                 </div>
               </div>
             </div>
@@ -395,7 +425,8 @@
                 15
               </div>
               <div class="event-month">
-                <h4 class="event-number-day fs-500 fw-semi-bold text-neutral-100 padding-block-400 padding-inline-400 line-height-s">
+                <h4
+                  class="event-number-day fs-500 fw-semi-bold text-neutral-100 padding-block-400 padding-inline-400 line-height-s">
                   November <br />2021
                 </h4>
                 <div class="event-duration fw-regular text-neutral-100 line-height-s">
@@ -407,7 +438,7 @@
                   <p class="fs-350 text-primary-300 line-height-s padding-block-500">
                     Marketing efforts, instead of handling in-house.
                   </p>
-                  <p >Explore Now</p>
+                  <p>Explore Now</p>
                 </div>
               </div>
             </div>
@@ -417,7 +448,8 @@
                 2
               </div>
               <div class="event-month">
-                <h4 class="event-number-day fs-500 fw-semi-bold text-neutral-100 padding-block-400 padding-inline-400 line-height-s">
+                <h4
+                  class="event-number-day fs-500 fw-semi-bold text-neutral-100 padding-block-400 padding-inline-400 line-height-s">
                   December<br />2021
                 </h4>
                 <div class="event-duration fw-regular text-neutral-100 line-height-s">
@@ -426,22 +458,23 @@
                   <h4 class="fs-500 fw-semi-bold text-neutral-100 single-margin-top-600 line-height-s">
                     The F design events
                   </h4>
-                  <p class="fs-350 text-primary-300 line-height-s padding-block-500" >
+                  <p class="fs-350 text-primary-300 line-height-s padding-block-500">
                     Provide your business with a variety of digital solutions
                     to promote.
                   </p>
-                  <p >Explore Now</p>
+                  <p>Explore Now</p>
                 </div>
-                
+
               </div>
             </div>
-         
+
           </div>
-           <div class="basic-flex-settings">
-            <button class="primary-btn decoration-neutral text-neutral-100 fs-button fw-super-bold centered uppercased  line-height-xs single-margin-top-600">
+          <div class="basic-flex-settings">
+            <button
+              class="primary-btn decoration-neutral text-neutral-100 fs-button fw-super-bold centered uppercased  line-height-xs single-margin-top-600">
               Explore More
             </button>
-           </div>
+          </div>
         </div>
       </section>
       <section class="developers-carousel padding-block-700 container">
@@ -521,7 +554,7 @@
         </div>
       </section>
 
-      <div class="container hero-container ">
+      <div class="container hero-container founder-section">
         <img src="/assets/Ren-Delon.svg" />
         <div class="padding-inline-500 padding-block-500zindex-50">
           <h5 class="text-accent-500 fs-350 fw-regular uppercased padding-block-500 letter-spacing-30 line-height-s">
@@ -617,8 +650,9 @@
           </article>
         </section>
         <div class="basic-flex-settings">
-       
-          <button class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow single-margin-block-200 ">
+
+          <button
+            class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow single-margin-block-200 ">
             see all
           </button>
         </div>
@@ -650,7 +684,8 @@
               </li>
               <li class="text-color-350 lucid-text">Production</li>
             </ul>
-            <button class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow single-margin-block-100 ">
+            <button
+              class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow single-margin-block-100 ">
               contact us
             </button>
           </div>
@@ -692,7 +727,8 @@
               <li class="padding-block-500">Market Analysis</li>
               <li>Production</li>
             </ul>
-            <button class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow single-margin-block-100 ">
+            <button
+              class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow single-margin-block-100 ">
               contact us
             </button>
           </div>
@@ -749,7 +785,7 @@
     <section class="padding-block-700 bg-primary-100">
       <div class="container awards-wrapper">
         <h3 class="fs-600 fw-bold centered-text line-height-m single-padding-bottom-600">Our Awards</h3>
-        <img src="/assets//awards.svg" class="padding-block-400"/>
+        <img src="/assets//awards.svg" class="padding-block-400" />
         <p class="padding-block-500 centered-text text-color-350">
           Want more awards? <span class="text-primary-400">Explore Now</span>
         </p>
@@ -769,8 +805,9 @@
             </h3>
           </div>
           <div>
-            <button class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow single-margin-block-100 ">
-              discovery all 
+            <button
+              class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow single-margin-block-100 ">
+              discovery all
             </button>
           </div>
         </div>
@@ -804,11 +841,13 @@
         <div class="blog padding-block-700">
           <h3 class="fs-600 text-primary-400 fw-bold">Newsletter</h3>
           <div class="newsletter">
-            <input type="email" name="email" id="" placeholder="Your email" class="form-field padding-inline-400 form-field--email text-color-350"
+            <input type="email" name="email" id="" placeholder="Your email"
+              class="form-field padding-inline-400 form-field--email text-color-350"
               aria-describedby="user-email-hint" />
-              <button class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow single-margin-block-100 ">
-                subscribe
-              </button>
+            <button
+              class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow single-margin-block-100 ">
+              subscribe
+            </button>
           </div>
         </div>
       </div>
@@ -820,7 +859,7 @@
           marginwidth="0"
           src="https://www.openstreetmap.org/export/embed.html?bbox=18.56449127197266%2C54.31371946884494%2C18.708686828613285%2C54.38975407400168&amp;layer=mapnik&amp;marker=54.351754357424696%2C18.63658905029297"></iframe><br /><small><a
             href="https://www.openstreetmap.org/?mlat=54.3518&amp;mlon=18.6366#map=13/54.3518/18.6366"></a></small>
-        <div class="container">
+        <div class="container form-container">
           <form class="map-form padding-inline-700 padding-block-700">
             <h4 class="fs-500 fw-semi-bold text-primary-400">Get In Touch</h4>
             <input type="email" name="email" id="" placeholder="Your email" class="form-field text-color-350"
@@ -843,7 +882,7 @@
       </section>
     </section>
 
-    <section class="bg-primary-100" >
+    <section class="bg-primary-100">
       <div class="container ">
         <div class="odd-columns">
           <div class="contact-column padding-block-400 | padding-inline-500">
@@ -895,7 +934,8 @@
             A digital agency is a business you hire to outsource your digital
             marketing efforts, instead of handling in-house.
           </p>
-          <button class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow single-margin-block-200 ">
+          <button
+            class="primary-btn uppercased fw-super-bold fs-button bg-neutral-100 btn-box-shadow single-margin-block-200 ">
             contact us
           </button>
         </div>
